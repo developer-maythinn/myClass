@@ -1,0 +1,159 @@
+
+3.Adjacent sibling selector (+)
+div + p {
+   color: #000000; 
+}
+
+4.General sibling selector (~)
+Selects all elements that are next siblings of a specified element.
+
+former_element ~ target_element { style properties }
+
+div ~ p {
+   color: #000000; 
+}
+
+https://www.w3schools.com/css/css_combinators.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+
+*******************************************
+CSS Comments
+ /* ....*/
+<style>
+         p {
+            color: red;
+            /* This is a single-line comment */
+            text-align: center;
+         }
+         /* This is a multi-line comment */
+  </style>
+***************************************
+
+CSS - Measurement Units
+%, em, rem, px, etc..
+
+px * ->	pixels (1px = 1/96th of 1in)
+em ->	Relative to the font-size of the element (2em means 2 times the size of the current font) equals to 0.5x30 = 15px
+rem -> Relative to font-size of the root element
+vw -> Relative to 1% of the width of the viewport*
+vh -> Relative to 1% of the height of the viewport*
+% -> sets the font-size relative to the current font-size.
+
+https://www.w3schools.com/cssref/css_units.asp
+
+***************************************
+
+CSS - Colors
+Hex Code	#RRGGBB	p{color:#FF0000;} between 00 and ff 
+
+Short Hex Code	#RGB	p{color:#6A7;}
+
+RGB %	rgb(rrr%,ggg%,bbb%)	p{color:rgb(50%,50%,50%);}
+
+RGB Absolute	rgb(rrr,ggg,bbb)	p{color:rgb(0,0,255);}(same as decimal 0-255)
+
+RGBA Value rgba(red, green, blue, alpha)
+
+keyword	aqua, black, etc.	p{color:teal;}
+
+https://www.w3schools.com/colors/colors_names.asp
+
+*****************************************
+
+margin and padding
+
+top right bottom left
+top-bottom, left-right
+top, left-right, bottom
+
+Css - Background
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+background-color
+background-image
+background-repeat
+background-position
+background-attachment
+background-size
+background-blend-mode
+background(shorthand)
+
+1.background-color
+opacity | Css Color
+
+2.background-image
+background-image: url("bgdesert.jpg");
+
+3.background-repeat
+repeat | repeat-x | repeat-y | no-repeat | initial | inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
+
+4.background-position
+top | left | bottom | right | 10% 10% | 20px 20px | initial | inherit| bottom 150px right 130px | right 5% bottom 5%
+background-position: right top
+
+Note: 2-value syntax: one value defines X and the other defines Y
+ https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
+5.background-attachment
+fixed | scroll
+
+6.background-size
+auto | length |cover|contain|initial|inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+7.background-blend-mode
+normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+https://www.w3schools.com/cssref/pr_background-blend-mode.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+
+background(shorthand)
+background: #ffffff url("img_tree.png") no-repeat right top;
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment
+
+******************************************
+Border
+border-style : 1px solid red;
+dotted | dashed | solid | double | groove | ridge | inset  | none |  hidden
+border-radius
+outline - outside
+border - inside
+********************************************
+
+
+Visibility
+visible | hidden
+
+*********************************************
+Display
+none, inline, block, inline-block
+
+*********************************************
+
+Pseudo Elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+1.	::first-line
+Use this element to add special styles to the first line of the text in a selector.
+
+2.	::first-letter
+Use this element to add special style to the first letter of the text in a selector.
+
+3.	::before
+Use this element to insert some content before an element.
+
+4.	::after
+Use this element to insert some content after an element.
+
+5. ::selection	p::selection	Selects the portion of an element that is selected by a user
+https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
+
+*********************************************

@@ -1,0 +1,151 @@
+
+CSS
+CSS is used to control the style of a web document in a simple and easy way.
+
+CSS is the acronym for "Cascading Style Sheet".
+
+Why to Learn CSS?
+Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+
+CSS is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning CSS:
+
+Create Stunning Web site - CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.
+
+Become a web designer - If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.
+
+Control web - CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.
+
+Learn other languages - Once you understands the basic of HTML and CSS then other related technologies like javascript, php, or angular are become easier to understand.
+
+*****************************************
+
+Three Ways to Insert CSS
+External CSS => link tag(rel, href)
+Internal CSS => style element
+Inline CSS => style attribute
+
+1.External CSS
+Use link tag in head.
+<link rel="stylesheet" type="text/css" href="style.css">
+
+2.Internal CSS
+Use <style></style> in head.
+
+3.Inline CSS
+Use style attribute inside an HTML element.
+<p style="color:red;">This is a paragraph.</p>
+
+******************************************
+CSS Rules Overriding
+Any inline style sheet takes highest priority.
+It will override intertal css or external css.
+
+******************************************
+
+selector { property: value }
+table { border: 1px solid red }
+
+table is a selector
+border is property
+1px solid red is values
+
+p {
+  color: red;
+  text-align: center;
+}
+p is a selector
+color is a property, and red is the property value
+text-align is a property, and center is the property value
+
+Selector − A selector is an HTML tag at which a style will be applied. This could be any tag like <h1> or <table> etc.
+
+Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be color, border etc.
+
+Value − Values are assigned to properties. For example, color property can have value either red or #F1F1F1 etc.
+
+******************************************
+
+Basic Selectors
+1.Type selectors
+2.Universal selector
+3.Class Selector
+4.ID selector
+5.Attribute selector
+
+1.Type selector(element name)
+h1 {
+   color: #36CFFF; 
+}
+
+2.Universal selector
+* { 
+   color: #000000; 
+}
+
+3.Class Selector
+.black {
+   color: #000000; 
+}
+h1.black {
+   color: #000000; 
+}
+<p class = "center bold">
+   This para will be styled by the classes center and bold.
+</p>
+
+4.ID selector
+#black {
+   color: #000000; 
+}
+h1#black {
+   color: #000000; 
+}
+#black h2 {
+   color: #000000; 
+}
+
+5.Attribute selector
+input[type = "text"] {
+   color: #000000; 
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+********************************************
+
+Grouping selector
+span, div {
+  border: red 2px solid;
+}
+h1, h2, h3 {
+   color: #36C;
+}
+#content, #footer, #supplement {
+   width: 200px;
+}
+
+*****************************************************
+
+Multiple Style Rules
+h1 {
+   color: #36C;
+   font-weight: normal;
+   letter-spacing: .4em;
+   margin-bottom: 1em;
+   text-transform: lowercase;
+}
+
+*****************************************************
+CSS Combinators
+1.Descendant selector (space)
+2.Child selector (>)
+3.Adjacent sibling selector (+)
+4.General sibling selector (~)
+
+1.Descendant selector (space)
+ul em {
+   color: #000000; 
+}
+
+2.Child selector (>)
+body > p {
+   color: #000000; 
+}
