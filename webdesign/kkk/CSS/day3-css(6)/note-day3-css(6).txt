@@ -1,0 +1,103 @@
+
+********************************************
+background-color
+background-image
+background-repeat
+background-position
+background-attachment
+background-size
+background-blend-mode
+background(shorthand)
+
+1.background-color
+opacity | Css Color
+
+2.background-image
+background-image: url("bgdesert.jpg");
+
+3.background-repeat
+repeat | repeat-x | repeat-y | no-repeat | initial | inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
+
+4.background-position
+top | left | bottom | right | 10% 10% | 20px 20px | initial | inherit| bottom 150px right 130px | right 5% bottom 5%
+background-position: right top
+
+Note: 2-value syntax: one value defines X and the other defines Y
+ https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
+5.background-attachment
+fixed | scroll
+
+6.background-size
+auto | length |cover|contain|initial|inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+7.background-blend-mode
+normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+https://www.w3schools.com/cssref/pr_background-blend-mode.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+
+background(shorthand)
+background: #ffffff url("img_tree.png") no-repeat right top;
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-origin
+background-clip
+background-attachment
+
+
+
+
+*********************************************
+
+Pseudo Elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+1.	::first-line
+Use this element to add special styles to the first line of the text in a selector.
+
+2.	::first-letter
+Use this element to add special style to the first letter of the text in a selector.
+
+3.	::before
+Use this element to insert some content before an element.
+
+4.	::after
+Use this element to insert some content after an element.
+
+5. ::selection	p::selection	Selects the portion of an element that is selected by a user
+https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
+
+*********************************************
+
+Pseudo Classes
+selector:pseudo-class {
+  property: value;
+}
+:hover,
+:link,
+:active,
+:visited,
+:focus,
+
+:first-child,
+:first-of-type,
+:last-child,
+:nth-child(2),  the second child of its parent
+:only-of-type,
+etc...
+Ref: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+******************************************
+
+Gradient
+Linear Gradients (goes down/up/left/right/diagonally)
+   %, direction, deg
+repeating-linear-gradient
+Radial Gradients (defined by their center)
+
