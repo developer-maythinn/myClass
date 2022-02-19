@@ -1,0 +1,80 @@
+*******************************************************
+https://fonts.google.com/
+
+Fonts
+font-family, font-style, font-variant, font-weight, font-size, font(shorthand)
+
+font style
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-style
+https://stackoverflow.com/questions/1680624/font-style-italic-vs-oblique-in-css
+normal, italic and oblique
+
+font-variant
+small-caps, normal
+
+font-weight
+ normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900
+
+font-size
+xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, size in pixels or in %
+
+font(shorthand)
+font: italic small-caps bold 15px georgia;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+*********************************************
+Text
+color, direction, letter-spacing, word-spacing, text-indent, text-align, text-decoration, text-transform, white-space, text-shadow,
+text-overflow, overflow-wrap, word-break
+
+text-shadow
+
+text-align
+left, right, center, justify
+
+text-decoration
+none, underline, overline, line-through
+
+text-transform
+none, capitalize, uppercase, lowercase
+
+text-indent
+
+white-space
+normal, pre, nowrap
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_white-space&preval=nowrap
+https://www.w3schools.com/cssref/pr_text_white-space.asp
+
+text-shadow, box-shadow
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+text-shadow: 4px 4px 8px blue
+
+text-overflow 
+clip, ellipis
+
+word-break
+keep-all, break-all
+https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break
+
+word-wrap
+break-word
+
+https://css-tricks.com/neumorphism-and-css/
+
+*********************************************
+box-shadow
+
+**************************************************
+
+Position
+relative, absolute, fixed, static, sticky
+static is default
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
