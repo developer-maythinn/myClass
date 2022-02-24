@@ -1,0 +1,72 @@
+
+border-radius
+border-radius: 15px; // all four corners,
+border-radius: 15px 50px 30px 5px; // top-left, top-right, bottom-right, bottom-left
+border-radius: 15px 50px 30px; // top-left, top-right and bottom-left,  bottom-right
+border-radius: 15px 50px; // top-left and bottom-right, top-right and bottom-left
+
+*******************************************************
+
+float,clear
+
+overflow
+(what should happen if content overflows an element's box.)
+visible|hidden|scroll|auto|initial|inherit;
+
+https://www.w3schools.com/cssref/pr_pos_overflow.asp
+
+*******************************************************
+
+Gradient
+1.Linear Gradients (goes down/up/left/right/diagonally)
+
+-Using more than two colors
+linear-gradient(red, yellow, blue, orange);
+
+-Direction
+to right
+
+-Diagonal
+to bottom right
+
+-Using angles
+40deg
+
+-Creating hard lines
+
+-Overlaying gradients
+
+-Gradient color hints
+
+-Positioning color stops
+linear-gradient(to left, lime 28px, red 77%, cyan);
+
+-Creating color bands & stripes
+
+-Controlling the progression of a gradient
+
+-repeating-linear-gradient
+
+2.Radial Gradients (defined by their center)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+*******************************************************
+
+
+
+
+Dimension
+width, height, line-height, max-height, min-height, max-width, min-width
+
+**************************************************
+
+Layers
+When elements are positioned, they can overlap other elements using with z-index.
+
+*******************************************************
+
+browser support extension
+-webkit- (Safari and Chrome)
+-ms- (IE 9)
+
+https://stackoverflow.com/questions/43397054/how-can-i-know-when-to-use-webkit-moz-ms-o-etc/43397177
