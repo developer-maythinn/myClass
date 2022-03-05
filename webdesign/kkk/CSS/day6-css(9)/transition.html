@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 20px;
+        }
+        div:hover{
+            background-color: green;
+            color: #fff;
+        }
+        div:nth-child(2){
+            /* transition-property: background-color, color;
+            transition-duration: 2s, 5s; */
+            /* transition-delay: 3s; */
+            /* transition-timing-function: ease-in; */
+            transition: all 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div>Normal</div>
+    <div>With transition</div>
+</body>
+</html>
