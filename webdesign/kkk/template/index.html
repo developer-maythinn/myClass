@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Slab", serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+      }
+      .box {
+        width: inherit;
+        height: inherit;
+        backdrop-filter: brightness(30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapper {
+        /* background-color: violet; */
+      }
+      .img-container {
+        width: 150px;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 50%;
+        background-image: url("https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        margin: 0 auto;
+      }
+      .content-container {
+        text-align: center;
+        color: #fff;
+        margin: 20px;
+      }
+      .content-container .name {
+        margin-bottom: 2px;
+        font-weight: 600;
+      }
+      .content-container p {
+        font-size: 20px;
+      }
+      .social-container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .social-icon {
+        width: 25px;
+        height: 25px;
+        background: #fff;
+        margin: 1px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="wrapper">
+          <div class="img-container"></div>
+          <div class="content-container">
+            <p class="name">John</p>
+            <p class="role">Managing Director</p>
+          </div>
+          <div class="social-container">
+            <div class="social-icon">
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
