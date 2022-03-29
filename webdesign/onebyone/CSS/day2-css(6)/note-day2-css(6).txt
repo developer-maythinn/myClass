@@ -1,0 +1,26 @@
+
+*********************************************
+Display
+none, inline, block, inline-block
+
+*********************************************
+
+Pseudo Elements
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+1.	::first-line
+Use this element to add special styles to the first line of the text in a selector.
+
+2.	::first-letter
+Use this element to add special style to the first letter of the text in a selector.
+
+3.	::before
+Use this element to insert some content before an element.
+
+4.	::after
+Use this element to insert some content after an element.
+
+5. ::selection	p::selection	Selects the portion of an element that is selected by a user
+https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
+
+*********************************************

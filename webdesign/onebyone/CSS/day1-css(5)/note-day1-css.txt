@@ -149,3 +149,70 @@ ul em {
 body > p {
    color: #000000; 
 }
+
+***********************************************
+
+Css - Background
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+background-color
+background-image
+background-repeat
+background-position
+background-attachment
+background-size
+background-blend-mode
+background(shorthand)
+
+1.background-color
+opacity | Css Color
+
+2.background-image
+background-image: url("bgdesert.jpg");
+
+3.background-repeat
+repeat | repeat-x | repeat-y | no-repeat | initial | inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
+
+4.background-position
+top | left | bottom | right | 10% 10% | 20px 20px | initial | inherit| bottom 150px right 130px | right 5% bottom 5%
+background-position: right top
+
+Note: 2-value syntax: one value defines X and the other defines Y
+ https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+
+5.background-attachment
+fixed | scroll
+
+6.background-size
+auto | length |cover|contain|initial|inherit;
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+7.background-blend-mode
+normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;
+https://www.w3schools.com/cssref/pr_background-blend-mode.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode
+
+
+background(shorthand)
+background: #ffffff url("img_tree.png") no-repeat right top;
+background-color
+background-image
+background-position
+background-size
+background-repeat
+background-attachment
+
+******************************************
+Border
+border-style : 1px solid red;
+dotted | dashed | solid | double | groove | ridge | inset  | none |  hidden
+border-radius
+outline - outside
+border - inside
+********************************************
+
+
+Visibility
+visible | hidden
+
