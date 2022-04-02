@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let fruit = {
+      //     name: "Apple",
+      //     price: "$100"
+      // }
+      // console.log(fruit.name, fruit.price)
+
+      // let { name, price } = fruit;
+      // console.log(name, price)
+
+      // let fruit = new Object();
+      // fruit.name = "Orange";
+      // fruit.price = "$50";
+      // console.log(fruit)
+
+      // function fruit(name, price) {
+      //    this.name = name;
+      //    this.price = price;
+      // }
+      // let myFruit = new fruit("Apple", "$20")
+      // console.log(myFruit.price)
+
+      // const fruit = {
+      //     name: "Apple",
+      //     price: "$20",
+      //     other: {
+      //         color: "green",
+      //         taste: "sour"
+      //     }
+      // }
+      // delete fruit.other.taste
+      // console.log(fruit.name, fruit.price, fruit.other )
+
+      // const fruit = {
+      //     name: "Apple"
+      // }
+      // fruit.name = "Orange";
+      // console.log(fruit.name)
+
+      // function fruit(name, price) {
+      //   return({
+      //     name,
+      //     price,
+      //   });
+      // }
+      // const myFruit = fruit("Orange", "$20");
+      // console.log(myFruit.name, myFruit.price);
+
+      // const fruit = {
+      //   name: "apple"
+      // }
+      // const myFruit = fruit;
+      // console.log(myFruit.name)
+
+      // let a = {};
+      // let b = a;
+      // console.log(a, b, a === b)
+
+      // let a = {};
+      // let b = {};
+      // console.log(a, b, a === b)
+
+      // let a = {name: "Apple"};
+      // let b = a;
+      // b.name="orange";
+      // console.log(a, b)
+
+        const fruit = {
+          name: "apple",
+          price: "$10"
+        }
+        const clone={};
+        
+        for(let item in fruit){
+          clone[item] = fruit[item]
+        }
+        fruit.name="Mango";
+        clone.name = "Orange";
+        console.log(fruit, clone)
+    </script>
+  </body>
+</html>
