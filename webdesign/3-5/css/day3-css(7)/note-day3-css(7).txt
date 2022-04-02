@@ -1,0 +1,115 @@
+CSS - Measurement Units
+%, em, rem, px, etc..
+
+px * ->	pixels (1px = 1/96th of 1in)
+em ->	Relative to the font-size of the element (2em means 2 times the size of the current font) equals to 0.5x30 = 15px
+rem -> Relative to font-size of the root element
+vw -> Relative to 1% of the width of the viewport*
+vh -> Relative to 1% of the height of the viewport*
+% -> sets the font-size relative to the current font-size.
+
+https://www.w3schools.com/cssref/css_units.asp
+
+***************************************
+
+CSS - Colors
+Hex Code	#RRGGBB	p{color:#FF0000;} between 00 and ff 
+
+Short Hex Code	#RGB	p{color:#6A7;}
+
+RGB %	rgb(rrr%,ggg%,bbb%)	p{color:rgb(50%,50%,50%);}
+
+RGB Absolute	rgb(rrr,ggg,bbb)	p{color:rgb(0,0,255);}(same as decimal 0-255)
+
+RGBA Value rgba(red, green, blue, alpha)
+
+keyword	aqua, black, etc.	p{color:teal;}
+
+https://www.w3schools.com/colors/colors_names.asp
+
+*****************************************
+
+margin and padding
+
+top right bottom left
+top-bottom, left-right
+top, left-right, bottom
+
+********************************************
+
+Css - Background
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+******************************************
+Border
+border-style : 1px solid red;
+dotted | dashed | solid | double | groove | ridge | inset  | none |  hidden
+
+border-radius
+outline - outside
+border - inside
+
+**************************************
+
+Pseudo Classes
+selector:pseudo-class {
+  property: value;
+}
+:hover,
+:link,
+:active,
+:visited,
+:focus,
+
+:first-child,
+:first-of-type,
+:last-child,
+:nth-child(2),  the second child of its parent
+:only-of-type,
+:not(p)
+etc...
+Ref: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+******************************************
+
+Gradient
+Linear Gradients (goes down/up/left/right/diagonally)
+   %, direction, deg
+repeating-linear-gradient
+Radial Gradients (defined by their center)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+
+*******************************************************
+https://fonts.google.com/
+
+
+day3 end
+
+Fonts
+font-family, font-style, font-variant, font-weight, font-size, font(shorthand)
+
+font style
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-style
+https://stackoverflow.com/questions/1680624/font-style-italic-vs-oblique-in-css
+normal, italic and oblique
+
+font-variant
+small-caps, normal
+
+font-weight
+ normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900
+
+font-size
+xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, size in pixels or in %
+
+font(shorthand)
+font: italic small-caps bold 15px georgia;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+*********************************************

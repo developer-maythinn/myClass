@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        .linear{
+            background: linear-gradient(-45deg, red, pink);
+            margin-bottom: 30px;
+            border-radius: 57% 43% 62% 38% / 41% 46% 54% 59% ;
+        }
+        .radial{
+            background: radial-gradient(aqua, violet, blue);
+        }
+        .repeating-linear{
+            margin-top: 30px;
+            background: repeating-linear-gradient(aqua 20px, violet 50%,blue 40px)
+        }
+    </style>
+</head>
+<body>
+    <div class="linear"></div>
+    <div class="radial"></div>
+    <div class="repeating-linear"></div>
+</body>
+</html>
