@@ -1,0 +1,194 @@
+*******************************************************
+
+float,clear
+
+
+Position
+relative, absolute, fixed, static, sticky
+static is default
+
+
+overflow
+(what should happen if content overflows an element's box.)
+visible|hidden|scroll|auto|initial|inherit;
+
+https://www.w3schools.com/cssref/pr_pos_overflow.asp
+
+*******************************************************
+Dimension
+width, height, line-height, max-height, min-height, max-width, min-width
+
+**************************************************
+
+Layers
+When elements are positioned, they can overlap other elements using with z-index.
+
+*******************************************************
+
+browser support extension
+-webkit- (Safari and Chrome)
+-ms- (IE 9)
+
+https://stackoverflow.com/questions/43397054/how-can-i-know-when-to-use-webkit-moz-ms-o-etc/43397177
+
+**********************************************
+CSS 2D Transforms
+		
+translate(x,y)
+The translate() method moves an element from its current position(according to the parameters given for the X-axis and the Y-axis).	
+
+translateX(n)
+Used to transforms the element along with x-axis
+
+translateY(n)
+Used to transforms the element along with y-axis
+
+scale(x,y)
+Used to change the width and height of element
+	
+scaleX(n)
+Used to change the width of element
+	
+scaleY(n)
+Used to change the height of element
+	
+rotate(angle)(clockwise or counter-clockwise)
+Used to rotate the element based on an angle(give -deg)
+	
+skewX(angle)
+Used to defines skew transforms along with x axis
+	
+skewY(angle)
+Used to defines skew transforms along with y axis
+
+matrix(n,n,n,n,n,n)
+Used to defines matrix transforms with six values
+ matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+*******************************************************
+CSS 3D Transforms
+
+perspective
+Give a 3D-positioned element some perspective
+
+transform-style
+Let the transformed child elements preserve the 3D transformations
+
+transform-origin
+transform-origin: 20% 40%;
+
+example ref: https://codepen.io/vineethtrv/pen/XKKEgM
+https://codepen.io/Marnmr/pen/jOWXZYq
+
+*******************************************************
+CSS Transitions
+transition-property ( none|all|property|initial|inherit ) all is default
+transition
+transition-delay
+transition-duration
+
+transition-timing-function
+1.ease (Default value.slow start, then fast, then end slowly )
+2.linear (same speed from start to end)
+3.ease-in (slow start) 
+4.ease-out (slow end)
+5.ease-in-out ( slow start and end )
+6.steps(int,start|end)
+7.cubic-bezier(n,n,n,n)
+
+ https://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp
+
+ https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+ https://www.w3schools.com/cssref/css3_pr_transition.asp
+
+***************************************************
+
+Animation
+animation-name
+animation-duration
+animation-timing-function
+animation-delay ( start animation after 5s )
+animation-iteration-count
+animation-direction (animation-direction: normal|reverse|alternate|alternate-reverse|initial|inherit; )
+animation-fill-mode
+animation-play-state
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+
+*******************************************************
+
+CSS Multi-column
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span ( element span across all columns )
+column-width
+
+*******************************************************
+Flexbox
+I.flex-container
+1.flex-direction ( row, column, row-reverse, column-reverse )
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-direction&preval=row
+
+2.flex-wrap (wrap, nowrap, wrap-reverse)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-wrap&preval=nowrap
+
+3.flex-flow (a shorthand property for setting both the flex-direction and flex-wrap properties)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-flow
+
+4.justify-content (center, flex-start, flex-end, space-around, space-between, space-evenly)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=space-evenly
+
+5.align-items(center, flex-start, flex-end, stretch, baseline)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch
+
+6.align-content (stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit)
+  it use with flex-wrap
+__________________________________________
+
+II. Flex items
+1.order
+
+2.align-self
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-self&preval=center
+
+3.flex-grow
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-grow&preval=1
+
+4.flex-shrink
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-shrink&preval=1
+
+5.flex-basis(initial length of a flexible item)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-basis&preval=10px
+
+6.flex => a shorthand property for flex-grow, flex-shrink, flex-basis
+
+https://www.w3schools.com/css/css3_flexbox_container.asp#justify-content
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+
+*******************************************************
+Grid
+
+https://www.w3schools.com/css/css_grid.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+*******************************************************
+Box Sizing
+border-box
+content-box
+
+*******************************************************
+
+Media queries
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+*******************************************************
