@@ -1,0 +1,96 @@
+
+Text
+color, direction, letter-spacing, word-spacing, text-indent, text-align, text-decoration, text-transform, text-shadow,white-space,
+text-overflow, overflow-wrap, word-break
+
+text-shadow
+
+text-align
+left, right, center, justify
+
+text-decoration
+none, underline, overline, line-through
+
+text-transform
+none, capitalize, uppercase, lowercase
+
+text-indent
+
+white-space
+normal, pre, nowrap
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_white-space&preval=nowrap
+https://www.w3schools.com/cssref/pr_text_white-space.asp
+
+text-shadow, box-shadow
+text-shadow: 4px 4px 8px blue
+
+text-overflow 
+clip, ellipis
+
+word-break
+keep-all, break-all
+https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-break
+
+word-wrap
+break-word
+
+https://css-tricks.com/neumorphism-and-css/
+
+*********************************************
+box-shadow
+
+**************************************************
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
+
+
+Gradient
+1.Linear Gradients (goes down/up/left/right/diagonally)
+
+-Using more than two colors
+linear-gradient(red, yellow, blue, orange);
+
+-Direction
+to right
+
+-Diagonal
+to bottom right
+
+-Using angles
+40deg
+
+-Creating hard lines
+
+-Overlaying gradients
+
+-Gradient color hints
+
+-Positioning color stops
+linear-gradient(to left, lime 28px, red 77%, cyan);
+
+-Creating color bands & stripes
+
+-Controlling the progression of a gradient
+
+-repeating-linear-gradient
+
+2.Radial Gradients (defined by their center)
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+
+***************************************************
+
+
+float,clear
+
+
+Position
+relative, absolute, fixed, static, sticky
+static is default
+
+
+overflow
+(what should happen if content overflows an element's box.)
+visible|hidden|scroll|auto|initial|inherit;
