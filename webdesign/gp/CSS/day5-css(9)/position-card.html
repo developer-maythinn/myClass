@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .container img{
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            /* background-color: aquamarine; */
+            /* border-radius: inherit; */
+        }
+        .container h2{
+            color: initial;
+        }
+        .detail{
+            position: absolute;
+            bottom: 0;
+            background-color: yellowgreen;
+            width: inherit;
+            text-align: center;
+            padding: 20px 0px;
+            /* border-radius: 0px 0px 20px 20px; */
+            /* opacity: 0.7; */
+        }
+        .detail h2{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/11495862/pexels-photo-11495862.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+        <div class="detail">
+            <h2>Heading 2</h2>
+            <p>This is a paragraph.</p>
+        </div>
+    </div>
+</body>
+</html>

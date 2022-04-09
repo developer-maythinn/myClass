@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: absolute;
+        }
+        span:nth-child(1){
+            background-color: violet;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        span:nth-child(2){
+            background-color: pink;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        span:nth-child(3){
+            background-color: yellowgreen;
+            top: 80px;
+            left: 80px;
+            z-index: 3;
+        }
+    </style>
+  </head>
+  <body>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </body>
+</html>
