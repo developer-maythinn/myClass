@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-transform: capitalize;
+            width: 200px;
+            height: 200px;
+            color: #fff;
+        }
+        .translate{
+            background: green;
+            /* transform: translate(30px, 50px); */
+            transform: translateX(40px);
+        }
+        .scale{
+            background: violet;
+            /* transform: scale(0.4, 0.5); */
+        }
+        .skew{
+            background-color: aqua;
+            /* transform: skew(40deg, 0deg); */
+            /* transform: skewX(-50deg); */
+            /* transform: skewY(-50deg); */
+        }
+        .rotate{
+            background: rgb(76, 76, 230);
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">translate</div>
+    <div class="scale">Scale</div>
+    <div class="skew">Skew</div>
+    <div class="rotate">rotate</div>
+</body>
+</html>

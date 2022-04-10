@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+        }
+        div, span{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            margin: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+       
+        div:hover{
+            animation-name: myRotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 3s; */
+        }
+        div:nth-child(2):hover{
+            animation-direction: alternate;
+        }
+        div:nth-child(3):hover{
+            animation-direction: reverse;
+        }
+        div:nth-child(4):hover{
+            animation-direction: alternate-reverse;
+        }
+        @keyframes myRotate {
+            from{
+                transform: rotate(0);
+                background-color: greenyellow;
+            }
+            to{
+                transform: rotate(360deg);
+                background-color: violet;
+            }
+        }
+        span{
+            background-color: #000;
+           
+        }
+        span:hover{
+            animation-name: myColor;
+            animation-duration: 3s;
+        }
+        @keyframes myColor {
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: green;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span></span>
+</body>
+</html>
