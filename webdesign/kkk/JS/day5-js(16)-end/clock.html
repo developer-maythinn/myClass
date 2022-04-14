@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            background-color: rgb(10, 10, 10);
+            width: 100%;
+            height: 100vh;
+            color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock{
+            font-family: 'Mochiy Pop One', sans-serif;
+        }
+        #date{
+            padding-top: 3px;
+            font-size: 0.6rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        button{
+            font-size: 10px;
+            padding: 2px 10px;
+            margin-top: 12px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="clock"></div>
+      <div id="date"></div>
+      <button onclick="clearInterval(myTime)">Stop</button>
+    </div>
+
+    <script>
+      let myTime = setInterval(myClock, 1000);
+
+      function myClock() {
+        const currentTime = new Date();
+        let day = currentTime.getDay();
+        switch (day) {
+          case 0:
+            day = "Sunday";
+            break;
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case 6:
+            day = "Saturday";
+            break;
+          default:
+            day = "No day";
+        }
+        console.log(day);
+        document.getElementById("clock").innerHTML =
+          currentTime.toLocaleTimeString();
+        document.getElementById("date").innerHTML =
+          day + ", " + currentTime.toLocaleDateString();
+      }
+    </script>
+  </body>
+</html>

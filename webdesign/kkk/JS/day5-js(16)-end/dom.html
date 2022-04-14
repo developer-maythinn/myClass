@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DOM</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="myClass">1</div>
+    <div class="myClass">2</div>
+    <p>Hello</p>
+    <p class="section"></p>
+    <img id="myImg" src="https://images.pexels.com/photos/11014630/pexels-photo-11014630.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    <script>
+
+        document.getElementById("myImg").src = 'https://images.pexels.com/photos/2252182/pexels-photo-2252182.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260';
+
+        document.getElementById("myImg").style.width = "500px"
+
+
+
+
+
+
+        // const myClass = document.getElementsByClassName('myClass')
+        // console.log(myClass)
+        // console.log(document.title)
+    //    const myId = document.getElementById("container")
+    //    console.log(myId)
+
+    // console.log(document.querySelectorAll("p.section")[0])
+    </script>
+</body>
+</html>

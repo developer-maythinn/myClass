@@ -1,0 +1,143 @@
+Array.filter()
+filter() method creates a new array with all elements that pass the test implemented by the provided function.
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+
+Array.find()
+ find() method returns the value of the first element in the provided array that satisfies the provided testing function.
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find(element => element > 10);
+console.log(found);
+// expected output: 12
+
+ Array.findIndex()
+ findIndex() method returns the index of the first element in the array
+const isLargeNumber = (element) => element > 13;
+console.log(array1.findIndex(isLargeNumber));
+// expected output: 3
+
+Array.includes()
+includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+const pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+// expected output: true
+console.log(pets.includes('at'));
+// expected output: false
+
+Array.indexOf()
+indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// expected output: 1
+
+// start from index 2
+console.log(beasts.indexOf('bison', 2));
+// expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// expected output: -1
+
+Array.reduce()
+The calculation flow: https://javascript.info/array-methods
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+Array.join()
+join() method creates and returns a new string by concatenating
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// expected output: "Fire-Air-Water"
+
+Array.keys()
+keys() method returns a new Array Iterator object that contains the keys for each index in the array.
+const array1 = ['a', 'b', 'c'];
+const iterator = array1.keys();
+
+for (const key of iterator) {
+  console.log(key);
+}
+
+// expected output: 0
+// expected output: 1
+// expected output: 2
+
+Array.values()
+values() method returns a new Array Iterator object that contains the values for each index in the array.
+
+const array1 = ['a', 'b', 'c'];
+const iterator = array1.values();
+
+for (const value of iterator) {
+  console.log(value);
+}
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+************************************************************** day 4 end
+Number Methods
+https://www.w3schools.com/Jsref/jsref_parseint.asp
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+**************************************************************
+String Methods and Properties
+length => length of a string
+indexOf() => the index of (the position of) the first occurrence of a specified text
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate"); // output 7 (count with space)
+lastIndexOf() =>searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+search()
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+replace()
+toUpperCase()
+toLowerCase()
+concat()
+trim() => removes whitespace from both sides of a string
+charAt() => returns the character at a specified index (position) in a string
+split() => a string can be converted to an array
+
+Extracting String Parts
+https://www.w3schools.com/js/js_string_methods.asp
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+**************************************************************
+JavaScript Math Object
+Math.round(x) returns the value of x rounded to its nearest integer:
+Math.round(4.7);    // returns 5
+Math.round(4.4);    // returns 4
+
+Math.ceil(x) returns the value of x rounded up to its nearest integer:
+Math.ceil(4.4);     // returns 5
+
+Math.floor(x) returns the value of x rounded down to its nearest integer:
+Math.floor(4.7);    // returns 4
+
+Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
+Math.random();     // returns a random number
