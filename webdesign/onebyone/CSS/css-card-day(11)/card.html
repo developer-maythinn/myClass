@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Poppins', sans-serif;
+       }
+       .container{
+           width: 300px;
+           height: 300px;
+           position: relative;
+           border-radius: 20px;
+           overflow: hidden;
+           box-shadow: 5px 8px 22px;
+       }
+       .container img{
+           width: inherit;
+           height: inherit;
+           object-fit: cover;
+           margin: 0;
+       }
+       .container .content{
+           width: 100%;
+           position: absolute;
+           bottom: 0;
+           min-height: 120px;
+           background-color: rgba(112, 109, 112, 0.6);
+           /* opacity: .6; */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           color: #fff;
+       }
+       .container .content h3{
+           font-size: 1.5rem;
+       }
+       .container .content p{
+           margin-bottom: 15px;
+           color: #fafafa;
+       }
+       .container .content .social{
+           /* background-color: red; */
+
+       }
+       .container .content .social i{
+           padding: 0px 10px;
+           font-size: 1.2rem;
+       }
+       body{
+           width: 100%;
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="image">
+        <div class="content">
+            <h3>John</h3>
+            <p>Managing Director</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
