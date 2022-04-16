@@ -1,0 +1,96 @@
+
+CSS Multi-column
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span ( element span across all columns )
+column-width
+
+*******************************************************
+Flexbox
+I.flex-container
+1.flex-direction ( row, column, row-reverse, column-reverse )
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-direction&preval=row
+
+2.flex-wrap (wrap, nowrap, wrap-reverse)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-wrap&preval=nowrap
+
+3.flex-flow (a shorthand property for setting both the flex-direction and flex-wrap properties)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-flow
+
+4.justify-content (center, flex-start, flex-end, space-around, space-between, space-evenly)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=space-evenly
+
+5.align-items(center, flex-start, flex-end, stretch, baseline)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch
+
+6.align-content (stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit)
+  it use with flex-wrap
+__________________________________________
+
+II. Flex items
+1.order
+
+2.align-self
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-self&preval=center
+
+3.flex-grow
+flex-grow: 1
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-grow&preval=1
+
+4.flex-shrink
+flex-shrink: 1
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-shrink&preval=1
+
+5.flex-basis(initial length of a flexible item)
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-basis&preval=10px
+
+6.flex => a shorthand property for flex-grow, flex-shrink, flex-basis
+
+https://www.w3schools.com/css/css3_flexbox_container.asp#justify-content
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+
+*******************************************************
+Grid
+
+https://www.w3schools.com/css/css_grid.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+*******************************************************
+Box Sizing
+border-box
+content-box
+
+*******************************************************
+
+Media queries
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+*******************************************************
+
+
