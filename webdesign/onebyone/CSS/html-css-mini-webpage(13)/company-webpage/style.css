@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -280,5 +284,119 @@ a {
 .team .team-container .card .card-content {
   text-align: center;
   margin: 20px;
+}
+
+.contact {
+  background-color: #1e1c1c;
+  height: 85vh;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact h2 {
+  color: #fafafa;
+  padding: 30px 0px;
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-form form input:not(input[type="button"]),
+.contact .contact-form form textarea {
+  width: 30vw;
+}
+
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.contact .contact-form form input:focus,
+.contact .contact-form form textarea:focus {
+  outline: 2px solid #e3e230;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+  background-color: #2a2626;
+}
+
+footer p {
+  color: #fafafa;
+}
+
+footer .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-container a {
+  margin: 10px;
+  color: #fafafa;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+footer .social-container a:nth-child(1) {
+  background-color: #3b5998;
+}
+
+footer .social-container a:nth-child(2) {
+  background-color: #784f99;
+}
+
+footer .social-container a:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+footer .social-container a:nth-child(4) {
+  background-color: #2578af;
 }
 /*# sourceMappingURL=style.css.map */

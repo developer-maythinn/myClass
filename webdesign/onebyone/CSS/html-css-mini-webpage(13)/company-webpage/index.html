@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="banner">
+    <div id="banner" class="banner">
       <header>
         <a href="#"
           ><img
@@ -28,8 +28,8 @@
         /></a>
         <nav class="nav-container">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li class="dropdown-container">
               <a href="">Portfolio</a>
               <i class="fa-solid fa-caret-down"></i>
@@ -39,7 +39,7 @@
                 <li>Portfolio 3</li>
               </ul>
             </li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -58,7 +58,7 @@
         <a href="#">Learn More</a>
       </div>
     </div>
-    <section class="about">
+    <section id="about" class="about">
       <img
         src="https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt=""
@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
       <h2>Teams</h2>
       <div class="team-container">
         <div class="card">
@@ -124,5 +124,37 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Enter your name" />
+          <input type="email" placeholder="Enter your email" />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Enter your message"
+          ></textarea>
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2022 | Company name</p>
+      <div class="social-container">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-viber"></i>
+        </a>
+        <a href="">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
