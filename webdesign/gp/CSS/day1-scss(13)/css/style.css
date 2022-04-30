@@ -1,0 +1,61 @@
+.buttonStyle, .w-container .card button, button {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.w-container .card {
+  width: 300px;
+  height: 300px;
+}
+
+.w-container .card h1 {
+  background-color: pink;
+}
+
+.w-container .card p {
+  color: #fff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: green;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  background-color: pink;
+}
+/*# sourceMappingURL=style.css.map */
