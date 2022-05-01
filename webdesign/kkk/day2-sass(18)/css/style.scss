@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./button";
+@import "./flexCenter";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w-container{
+    .card{
+        h1{
+            color: pink;
+        }
+        p{
+            color: green;
+        }
+        button{
+            @extend .btnStyle;
+        }
+    }
+}
+.container{
+   @include flexCenter(100vh, violet);
+}
+.wrapper{
+   @include flexCenter(50vh, yellow);
+}
