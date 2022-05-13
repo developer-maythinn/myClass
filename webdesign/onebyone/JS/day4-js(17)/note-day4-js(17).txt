@@ -1,0 +1,72 @@
+
+JavaScript String Operators
+let text3 = text1 + " " + text2;
+let y = "5" + 5;
+let z = "Hello" + 5;
+
++=
+let text1 = "What a very ";
+text1 += "nice day";
+
+
+JavaScript Comparison Operators
+https://www.w3schools.com/js/js_comparisons.asp
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator
+
+****************************************************************
+
+JavaScript Logical Operators
+&&	and	(x < 10 && y > 1) is true	
+||	or	(x == 5 || y == 5) is false	
+!	not	!(x == y) is true
+https://www.w3schools.com/js/js_comparisons.asp
+
+****************************************************************
+Conditional Statements
+if
+else if
+else
+switch
+
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+Switch
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+****************************************************************
+for loop
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+
+Statement 1 is executed (one time) before the execution of the code block.
+Statement 2 defines the condition for executing the code block.
+Statement 3 is executed (every time) after the code block has been executed.
+
+Example:
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
