@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // let fruits = ["apple", "orange", "mango"];
+        // console.log(fruits.length)
+        // let fruitsString = fruits.toString();
+        // console.log(typeof fruitsString)
+
+        // let fruit = ["apple", "orange", "mango"];
+        // console.log('original', fruit)
+
+        // let fruits = ["apple", "orange", "mango"];
+        // let arrPush = fruits.push("Pineapple");
+        // console.log('push', fruits)
+
+        // let fruitPop = ["apple", "orange", "mango"];
+        // let popArr = fruitPop.pop();
+        // console.log('pop', fruitPop)
+
+        // let fruitunshift = ["apple", "orange", "mango"];
+        // let unshiftArr = fruitunshift.unshift("Pineapple");
+        // console.log('unshift', fruitunshift)
+
+        // let fruitshift = ["apple", "orange", "mango"];
+        // let shiftArr = fruitshift.shift();
+        // console.log('shift', fruitshift)
+        
+        // let fruits = ["apple", "orange", "mango"];
+        // // fruits.splice(2, 0, "Lemon", "Kiwi");
+        // fruits.splice(1, 1);
+        // console.log(fruit)
+        // console.log(fruits)
+
+        // let fruits = ["apple", "orange", "mango"];
+        // let colors = ["white", "black"];
+        // let result = fruits.concat(colors);
+        // console.log(result)
+
+
+        // let fruits = ["apple", "orange", "mango"];
+        // let text = "";
+        // fruits.forEach((item, index) => console.log(item, index))
+        // console.log(text)
+
+        let fruits = ["apple", "orange", "mango"];
+        let text = "";
+        fruits.map((item, index) => text += item + " ")
+        // document.getElementById('demo').innerHTML = text;
+        document.getElementById('demo1').innerHTML = "<h1>InnerHTML</h1>";
+        document.getElementById('demo2').innerText = "<h1>InnerText</h1>";
+
+        console.log(text)
+    </script>
+</body>
+</html>
