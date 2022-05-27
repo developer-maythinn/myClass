@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #202726;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: #fff;
+        box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+          20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+          0px 0px 0px 10px #ff7883, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+      #display {
+        height: 50px;
+        line-height: 50px;
+        padding: 20px;
+        text-align: right;
+        font-size: 25px;
+      }
+      .button-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 35px;
+        background-color: #ff7883;
+      }
+      .button {
+        color: #fff;
+        font-size: 25px;
+        outline: 1px solid #fff;
+        text-align: center;
+        border-radius: 50%;
+        width: 50px;
+        line-height: 50px;
+        box-shadow: inset 10px 10px 27px -8px #78fff4,
+          inset 0px -10px 27px -8px #ff2c3d, -5px 5px 15px 5px rgb(0 0 0 / 0%);
+      }
+      .button:hover {
+        background-color: #262c2c;
+        color: #ff7883;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0px 0px 2px #78fff4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display"></div>
+      <div class="button-container">
+        <div class="button">C</div>
+        <div class="button">/</div>
+        <div class="button">*</div>
+        <div class="button">del</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button">-</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button">+</div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button">.</div>
+        <div class="button">(</div>
+        <div class="button">0</div>
+        <div class="button">)</div>
+        <div class="button">=</div>
+      </div>
+    </div>
+    <script>
+      let display = document.getElementById("display");
+      let buttons = Array.from(document.getElementsByClassName("button"));
+      buttons.map((button) => {
+        button.addEventListener("click", (e) => {
+          let targetText = e.target.innerText;
+          switch (targetText) {
+            case "=":
+              try {
+                display.innerText = Function("return " + display.innerText)();
+              } catch {
+                display.innerText = "0";
+              }
+              break;
+            case "C":
+              display.innerText = "";
+              break;
+            case "del":
+              display.innerText = display.innerText.slice(0, -1);
+              break;
+            default:
+              display.innerText += targetText;
+          }
+          console.log();
+        });
+      });
+    </script>
+  </body>
+</html>
