@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -52,7 +56,7 @@ a {
 }
 
 #banner header .nav-container ul li {
-  padding: 0px 15px;
+  padding: 0px 1vw;
 }
 
 #banner header .nav-container ul li a {
@@ -194,6 +198,10 @@ a {
   line-height: 30px;
 }
 
+#team {
+  margin-bottom: 50px;
+}
+
 #team h2 {
   text-align: center;
   -webkit-text-decoration: overline #2fd2e3;
@@ -245,5 +253,124 @@ a {
 #team .team-container .card .card-content {
   text-align: center;
   margin: 20px;
+}
+
+#contact {
+  background-color: #1e1c1c;
+  width: 100%;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact h2 {
+  color: #fafafa;
+  padding: 30px 0px;
+}
+
+#contact .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact-form form input:not(input[type="button"]), #contact .contact-form form textarea {
+  width: 30vw;
+}
+
+#contact .contact-form form input, #contact .contact-form form textarea {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+
+#contact .contact-form form input:focus, #contact .contact-form form textarea:focus {
+  outline: 2px solid #e3e230;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2a2626;
+  padding: 20px 50px;
+}
+
+footer p {
+  color: #fafafa;
+}
+
+footer .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .social-container a {
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social-container a:nth-child(1) {
+  background-color: #3b5998;
+}
+
+footer .social-container a:nth-child(2) {
+  background-color: #784f99;
+}
+
+footer .social-container a:nth-child(3) {
+  background-color: #1da1f1;
+}
+
+footer .social-container a:nth-child(4) {
+  background-color: #2477ae;
+}
+
+@media (max-width: 767.98px) {
+  #banner header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

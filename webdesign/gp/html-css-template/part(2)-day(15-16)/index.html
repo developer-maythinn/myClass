@@ -16,11 +16,18 @@
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/128/7560/7560744.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- shortcut #banner -->
-    <div id="banner">
+    <section id="banner">
       <header>
         <a href="">
           <img
@@ -31,8 +38,8 @@
         <nav class="nav-container">
           <ul>
             <!-- shortcut li*4>a -->
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li class="dropdown-container">
               <a href=""
                 >Portfolio <i class="fa-solid fa-caret-down"></i>
@@ -43,7 +50,7 @@
                 </ul>
               </a>
             </li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -61,7 +68,7 @@
         </p>
         <a href="#">Learn more</a>
       </div>
-    </div>
+    </section>
     <section id="about">
       <img
         src="https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -92,7 +99,10 @@
       <div class="team-container">
         <div class="card">
           <div class="img-container">
-            <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="person" />
+            <img
+              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="person"
+            />
           </div>
           <div class="card-content">
             <h3>Alex Roren</h3>
@@ -101,7 +111,10 @@
         </div>
         <div class="card">
           <div class="img-container">
-            <img src="https://images.pexels.com/photos/4339952/pexels-photo-4339952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="person" />
+            <img
+              src="https://images.pexels.com/photos/4339952/pexels-photo-4339952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="person"
+            />
           </div>
           <div class="card-content">
             <h3>Steve Jobs</h3>
@@ -110,15 +123,49 @@
         </div>
         <div class="card">
           <div class="img-container">
-            <img src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="person" />
+            <img
+              src="https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="person"
+            />
           </div>
           <div class="card-content">
             <h3>Robin</h3>
             <p>Creative Director</p>
           </div>
         </div>
-        
       </div>
     </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Enter your name" />
+          <input type="email" placeholder="Enter your email" />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Enter your message"
+          ></textarea>
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2022 | Company name</p>
+      <div class="social-container">
+        <a href="#">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-viber"></i>
+        </a>
+        <a href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
