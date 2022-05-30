@@ -161,3 +161,32 @@ body {
     font-size: 16px;
   }
 }
+@media (max-width: 768px) {
+  .main-section-bg{
+    height: 120vh;
+    .bg-img{
+      width: 80%;
+      height: 250px;
+      i{
+        font-size: 8rem;
+      }
+    }
+  }
+  .custom-shape-divider-bottom-1653314465 {
+    bottom: -1px;
+  }
+  .about{
+    height: 100vh;
+    img{
+      width: 250px;
+    }
+  }
+  .card-container{
+    height: auto;
+    .icon-box{
+      padding: 20px;
+      margin: 10px;
+    }
+  }
+  
+}
