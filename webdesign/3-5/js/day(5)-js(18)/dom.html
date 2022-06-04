@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <!-- <h1 id="heading1">Hello 1</h1>
+    <h1 class="para">Hello 2</h1>
+    <h1 class="para">Hello 2</h1>
+
+    <p>Paragraph</p>
+    <p class="para">Intro 1</p>
+    <p class="para">Intro 1</p>
+    <p class="para">Intro 1</p> -->
+    <div id="demo"></div>
+    <img
+      src="https://images.pexels.com/photos/12081169/pexels-photo-12081169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      alt=""
+    />
+    <script>
+      console.log(document.body);
+      console.log(document.getElementsByTagName("img"));
+      document.getElementsByTagName("img")[0].src =
+        "https://images.pexels.com/photos/3551252/pexels-photo-3551252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+
+      // document.getElementById("heading1").innerHTML = "Hello JS";
+      // document.getElementsByTagName("h1")[1].innerHTML = "World";
+      // // console.log(document.getElementsByClassName("para"))
+      // console.log(document.querySelectorAll("h1.para"))
+
+      //   let myDiv = document.createElement("div");
+      //   let textNode = document.createTextNode("Hello JS");
+      //   myDiv.appendChild(textNode);
+      //   console.log(myDiv);
+      //   document.getElementById("demo").appendChild(myDiv);
+    </script>
+  </body>
+</html>
