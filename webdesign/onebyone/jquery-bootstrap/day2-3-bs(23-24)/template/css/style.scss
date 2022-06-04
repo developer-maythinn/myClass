@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgba(34, 56, 82, 0.9);
+}
+.main {
+  background: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
+  height: 100vh;
+  position: relative;
+  .custom-main-section {
+    height: 80vh;
+  }
+  .bg-img {
+    min-width: 350px;
+    max-width: 450px;
+    height: 350px;
+    border-radius: 48% 52% 33% 67% / 42% 50% 50% 58%;
+    background: linear-gradient(to right, #4ac29a, #bdfff3);
+    text-align: center;
+
+    i {
+      font-size: 10rem;
+    }
+  }
+}
+
+.custom-shape-divider-bottom-1654343213 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1654343213 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 134px;
+}
+
+.custom-shape-divider-bottom-1654343213 .shape-fill {
+  fill: #ffffff;
+}
+
+.about {
+  height: 80vh;
+  img {
+    width: 300px;
+    height: auto;
+    border: 10px solid #4ac29a;
+    border-radius: 20px;
+    transform: skewY(7deg);
+    box-shadow: -10px 10px, -15px 10px 20px;
+  }
+}
+
+.card-container {
+  position: relative;
+  background-image: url("../img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  .custom-card {
+    width: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(0.8rem);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    i {
+      font-size: 3em;
+    }
+    .bxl-dribbble {
+      color: #fe79a6;
+    }
+    .bx-file {
+      color: #3fcdc7;
+    }
+    .bx-tachometer {
+      color: #fdd155;
+    }
+    .bx-world {
+      color: #2282ff;
+    }
+    h5{
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.card-container::before{
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:rgba(20, 30, 48, 0.3);
+
+}
+@media (max-width: 768px) {
+  .main {
+    height: 110vh;
+  }
+  .about {
+    img {
+      width: 200px;
+    }
+  }
+  .card-container{
+    height: auto;
+  }
+}
