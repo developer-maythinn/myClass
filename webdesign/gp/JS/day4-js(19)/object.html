@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     name: "john",
+        //     age: 24,
+        //     parent: {
+        //         fatherName: "Jobs",
+        //         motherName: "Rose"
+        //     }
+        // }
+        // console.log(user.name)
+        // console.log(user.age)
+        // console.log(user.parent.fatherName)
+        // console.log(user.parent.motherName)
+
+        // let user = new Object();
+        // user.name = "Rose";
+        // user.age = 20;
+        // console.log(user)
+
+        function myFruit(name, price) {
+            this.fruitName = name;
+            this.fruitPrice = price;
+        }
+        let myObj = new myFruit("Apple", 200);
+        // console.log(myObj.fruitName, myObj.fruitPrice)
+
+        delete myObj.fruitName;
+        myObj.fruitPrice = 500;
+        console.log(myObj)
+
+
+
+    </script>
+</body>
+</html>

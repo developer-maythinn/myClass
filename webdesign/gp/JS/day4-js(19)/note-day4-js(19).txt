@@ -1,0 +1,273 @@
+
+The For/In Loop
+The JavaScript for/in statement loops through the properties of an object:
+
+The For/Of Loop
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+Loop over array
+var cars = ['BMW', 'Volvo', 'Mini'];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
+
+Loop over string
+var txt = 'JavaScript';
+var x;
+for (x of txt) {
+  document.write(x + "<br >");
+}
+
+While loop
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+Do While loop
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+****************************************************************
+JavaScript Break and Continue (Loop Control)
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+
+Break
+for (i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+Continue 
+for (i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+
+JavaScript Labels ( a label name and a colon: )
+labelname:
+break labelname;
+continue labelname;
+
+Example:
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+list: {
+  text += cars[0] + "<br>"; 
+  text += cars[1] + "<br>"; 
+  break list;
+  text += cars[2] + "<br>"; 
+  text += cars[3] + "<br>"; 
+}
+document.getElementById("demo").innerHTML = text;
+
+*******************************************************************
+JavaScript Errors
+https://www.w3schools.com/js/js_errors.asp
+https://www.w3schools.com/jsref/jsref_obj_error.asp
+
+JavaScript try and catch
+try {
+  alert('Welcome');
+  addalert("Welcome guest!"); // for error
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+
+Error Object Properties
+name
+message
+
+Error Name Values
+ReferenceError - An illegal reference has occurred
+SyntaxError -	A syntax error has occurred
+TypeError - A type error has occurred
+
+
+*******************************************************************
+
+JavaScript has 3 types of scope:
+https://www.w3schools.com/js/js_scope.asp
+Block scope
+Function scope
+Global scope
+
+
+*******************************************************************
+Function
+
+1.Function Declarations
+function greet(){ // define function 
+     console.log("Hello")
+ }
+ greet() // invoke function.This is also call method.
+
+
+2.An anonymous function (a function without a name).
+let username = function (){ // define function 
+     console.log("Hello")
+}
+ console.log(username())
+
+
+3.Self-Invoking Functions
+An IIFE (Immediately Invoked Function Expression)
+(function () {
+  let x = "Hello!!";  // I will invoke myself
+})();
+
+3. Hoisting
+let test = myfunc(3);
+ function myfunc(num1) {
+     console.log(num1 + num1)
+}
+
+
+https://www.w3schools.com/js/js_function_invocation.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+
+this
+call() https://www.w3schools.com/js/js_function_call.asp
+
+*******************************************************************
+Primitives data type
+strings,
+numbers,
+boolean values true/false,
+null,
+undefined, 
+symbol,
+bigint
+
+*******************************************************************
+
+Objects
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+1.Object literal
+let user = {     // an object
+  name: "John",  // by key "name" store value "John"
+  age: 30        // by key "age" store value 30
+};
+
+2.By creating instance of Object
+let myobj = new Object();
+myobj.name = "Apple";
+myobj.price = 500;
+console.log(myobj);
+
+3.By using an Object constructor
+function myfruit(name, price) {
+    this.name = name;
+    this.price = price;
+}
+let myObj = new myfruit("Orange", 1000)
+console.log(myObj);
+
+4.Nested Objects
+let user = {
+  name: "John", // by key "name" store value "John"
+  age: 30, // by key "age" store value 30
+  parent: {
+    fatherName: "Steve",
+    motherName: "Amelia"
+  }
+};
+
+To remove a property, we can use delete operator:
+delete user.age;
+
+Object with const can be changed
+const user = {
+  name: "May"
+};
+user.name = "Khine"; // (*)
+alert(user.name); // Khine
+
+
+**************************************************************  day4 end
+
+Property value shorthand
+function makeUser(name, age) {
+  return{
+    name, // name: name,
+    age // age: age
+  }
+}
+
+let user = makeUser("John", 30);
+alert(user.name); // John
+
+Object copying, references
+let user = { name: "John" };
+let admin = user; // copy the reference
+
+https://javascript.info/object-copy
+Comparison by reference
+let a = {};
+let b = a; // copy the reference
+alert( a == b ); // true, both variables reference the same object
+alert( a === b ); // true
+
+here two independent objects are not equal, even though both are empty:
+let a = {};
+let b = {}; // two independent objects
+alert( a == b ); // false
+
+We can use any variable to access the object and modify its contents:
+let user = { name: 'John' };
+let admin = user;
+admin.name = 'Pete'; // changed by the "admin" reference
+alert(user.name); // 'Pete', changes are seen from the "user" reference
+
+Cloning
+let user = {
+  name: "John",
+  age: 30
+};
+let clone = {}; // the new empty object
+// let's copy all user properties into it
+for (let key in user) {
+  clone[key] = user[key];
+}
+// now clone is a fully independent object with the same content
+clone.name = "Pete"; // changed the data in it
+alert( user.name ); // still John in the original object
+
+**************************************************************
+
+Destructuring assignment
+The two most used data structures in JavaScript are Object and Array.
+
+let a, b, rest;
+[a, b] = [10, 20];
+console.log(a);
+// expected output: 10
+console.log(b);
+// expected output: 20
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(rest);
+// expected output: Array [30,40,50]
+
+Basic variable assignment
+const foo = ['one', 'two', 'three'];
+const [red, yellow, green] = foo;
+console.log(red); // "one"
+console.log(yellow); // "two"
+console.log(green); // "three"
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function greet(){
+      //     console.log("Hello function")
+      // }
+      // greet()
+
+      // let myFunc = function(){
+      //     console.log("hello")
+      //     return "This is function"
+      // }
+      // console.log(myFunc())
+
+      // function sum(num1, num2){
+      //   return num1 + num2
+      // }
+      // console.log(sum(12, 10))
+      // console.log(sum(15, 30))
+
+      // (function(name) {
+      //     console.log(name)
+      // })("John")
+
+      //   let test = myFunc();
+      //   function myFunc() {
+      //     console.log("first");
+      //   }
+
+    //   function fruit() {
+    //     return this;
+    //   }
+    //   console.log(fruit())
+
+        let test = {
+            age: 25,
+            name: "John",
+            myFunc: function(){
+                return this;
+            }
+        }
+        console.log(test.myFunc())
+
+    </script>
+  </body>
+</html>
