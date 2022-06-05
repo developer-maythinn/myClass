@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">Apple</div>
+    </div>
+
+    <script>
+        let newItem = document.createElement("p");
+        let textNode = document.createTextNode("Orange");
+        newItem.appendChild(textNode);
+        
+        let parentNode = document.getElementById("parent");
+        let childNode = document.getElementById("child");
+        // let parentDiv = childNode.parentNode;
+        parentNode.insertBefore(newItem, childNode)
+        // parentDiv.appendChild(newItem)
+
+
+    </script>
+</body>
+</html>
