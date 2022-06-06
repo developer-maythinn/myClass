@@ -108,6 +108,47 @@
   background:rgba(20, 30, 48, 0.3);
 
 }
+
+.carousel{
+  .custom-carousel-item{
+    height: 400px;
+    max-height: 500px;
+    position: relative;
+    .img-wrapper{
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(
+        45deg,
+        #fdd044 0%,
+        #fed350 53%,
+        #a2f1de 20%,
+        #74d8bb 100%
+      );
+      img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        outline: 2px solid pink;
+        position: absolute;
+        top: 33%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+      }
+    }
+    p{
+      position: absolute;
+      background-color: #fff;
+      top: 170px;
+      border-radius: 20%;
+      padding: 56px 30px 30px;
+    }
+  }
+}
+
+
 @media (max-width: 768px) {
   .main {
     height: 110vh;
