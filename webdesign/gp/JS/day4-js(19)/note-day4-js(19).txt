@@ -199,56 +199,6 @@ const user = {
 user.name = "Khine"; // (*)
 alert(user.name); // Khine
 
-
-**************************************************************  day4 end
-
-Property value shorthand
-function makeUser(name, age) {
-  return{
-    name, // name: name,
-    age // age: age
-  }
-}
-
-let user = makeUser("John", 30);
-alert(user.name); // John
-
-Object copying, references
-let user = { name: "John" };
-let admin = user; // copy the reference
-
-https://javascript.info/object-copy
-Comparison by reference
-let a = {};
-let b = a; // copy the reference
-alert( a == b ); // true, both variables reference the same object
-alert( a === b ); // true
-
-here two independent objects are not equal, even though both are empty:
-let a = {};
-let b = {}; // two independent objects
-alert( a == b ); // false
-
-We can use any variable to access the object and modify its contents:
-let user = { name: 'John' };
-let admin = user;
-admin.name = 'Pete'; // changed by the "admin" reference
-alert(user.name); // 'Pete', changes are seen from the "user" reference
-
-Cloning
-let user = {
-  name: "John",
-  age: 30
-};
-let clone = {}; // the new empty object
-// let's copy all user properties into it
-for (let key in user) {
-  clone[key] = user[key];
-}
-// now clone is a fully independent object with the same content
-clone.name = "Pete"; // changed the data in it
-alert( user.name ); // still John in the original object
-
 **************************************************************
 
 Destructuring assignment
@@ -271,3 +221,4 @@ console.log(red); // "one"
 console.log(yellow); // "two"
 console.log(green); // "three"
 
+**************************************************************  day4 end

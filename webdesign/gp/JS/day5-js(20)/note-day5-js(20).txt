@@ -1,0 +1,355 @@
+
+Property value shorthand
+function makeUser(name, age) {
+  return{
+    name, // name: name,
+    age // age: age
+  }
+}
+
+let user = makeUser("John", 30);
+alert(user.name); // John
+
+Object copying, references
+let user = { name: "John" };
+let admin = user; // copy the reference
+
+https://javascript.info/object-copy
+Comparison by reference
+let a = {};
+let b = a; // copy the reference
+alert( a == b ); // true, both variables reference the same object
+alert( a === b ); // true
+
+here two independent objects are not equal, even though both are empty:
+let a = {};
+let b = {}; // two independent objects
+alert( a == b ); // false
+
+We can use any variable to access the object and modify its contents:
+let user = { name: 'John' };
+let admin = user;
+admin.name = 'Pete'; // changed by the "admin" reference
+alert(user.name); // 'Pete', changes are seen from the "user" reference
+
+Cloning
+let user = {
+  name: "John",
+  age: 30
+};
+let clone = {}; // the new empty object
+// let's copy all user properties into it
+for (let key in user) {
+  clone[key] = user[key];
+}
+// now clone is a fully independent object with the same content
+clone.name = "Pete"; // changed the data in it
+alert( user.name ); // still John in the original object
+
+
+
+Array
+https://www.w3schools.com/js/js_arrays.asp
+1.Create array
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+const cars = new Array("Saab", "Volvo", "BMW");
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
+
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
+Array Elements Can Be Objects
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+It is a common practice to declare arrays with the const keyword.
+https://www.w3schools.com/js/js_array_const.asp
+const cars = ["Saab", "Volvo", "BMW"];
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+
+
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Toyota";
+cars.push("Audi");
+
+Spaces and line breaks are not important. A declaration can span multiple lines:
+const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+
+
+Array Method
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+https://www.w3schools.com/js/js_array_methods.asp
+
+arr.length => length of arrray
+toString()  => Converting Arrays to Strings
+All JavaScript objects have a toString() method.
+arr.push(...items) – adds items to the end,
+arr.pop() – extracts an item from the end,
+arr.shift() – extracts an item from the beginning,
+arr.unshift(...items) – adds items to the beginning,
+ splice() =>  can be used to add new items to an array
+   Example: var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                   fruits.splice(2, 0, "Lemon", "Kiwi");
+The first parameter (2) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+splice() => returns an array with the deleted items:
+fruits.splice(2, 2, "Lemon", "Kiwi");
+fruits.splice(0, 1);
+concat() => creates a new array by merging (concatenating) existing arrays:
+slice() => slices out a piece of an array into a new array.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(3);
+var test = slice(1, 3)
+The method then selects elements from the start argument, and up to (but not including) the end argument.
+sort() =>  sorts an array alphabetically.
+https://www.w3schools.com/js/js_array_sort.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+https://www.w3schools.com/jsref/jsref_sort.asp
+
+reverse() => reverses the elements in an array.
+
+Numeric Sort
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+points.sort(function(a, b){return b - a});
+
+Sorting Object Arrays
+var cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+cars.sort(function(a, b){return a.year - b.year});
+
+Array.forEach()
+forEach() => calls a function (a callback function) once for each array element.
+
+Array.map()
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+https://www.w3schools.com/jsref/jsref_map.asp
+
+It calls the function for each element of the array and returns the array of results.
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+
+const array1 = [1, 4, 9, 16];
+const map1 = array1.map(x => x * 2);
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+
+Array.filter()
+filter() method creates a new array with all elements that pass the test implemented by the provided function.
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+
+Array.find()
+ find() method returns the value of the first element in the provided array that satisfies the provided testing function.
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find(element => element > 10);
+console.log(found);
+// expected output: 12
+
+ Array.findIndex()
+ findIndex() method returns the index of the first element in the array
+const isLargeNumber = (element) => element > 13;
+console.log(array1.findIndex(isLargeNumber));
+// expected output: 3
+
+Array.includes()
+includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+const pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+// expected output: true
+console.log(pets.includes('at'));
+// expected output: false
+
+Array.indexOf()
+indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// expected output: 1
+
+// start from index 2
+console.log(beasts.indexOf('bison', 2));
+// expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// expected output: -1
+
+Array.reduce()
+The calculation flow: https://javascript.info/array-methods
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+Array.join()
+join() method creates and returns a new string by concatenating
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// expected output: "Fire-Air-Water"
+
+Array.keys()
+keys() method returns a new Array Iterator object that contains the keys for each index in the array.
+const array1 = ['a', 'b', 'c'];
+const iterator = array1.keys();
+
+for (const key of iterator) {
+  console.log(key);
+}
+
+// expected output: 0
+// expected output: 1
+// expected output: 2
+
+Array.values()
+values() method returns a new Array Iterator object that contains the values for each index in the array.
+
+const array1 = ['a', 'b', 'c'];
+const iterator = array1.values();
+
+for (const value of iterator) {
+  console.log(value);
+}
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+************************************************************** 
+Number Methods
+https://www.w3schools.com/Jsref/jsref_parseint.asp
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+**************************************************************
+String Methods and Properties
+length => length of a string
+indexOf() => the index of (the position of) the first occurrence of a specified text
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate"); // output 7 (count with space)
+lastIndexOf() =>searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+search()
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+replace()
+toUpperCase()
+toLowerCase()
+concat()
+trim() => removes whitespace from both sides of a string
+charAt() => returns the character at a specified index (position) in a string
+split() => a string can be converted to an array
+
+Extracting String Parts
+https://www.w3schools.com/js/js_string_methods.asp
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+**************************************************************
+JavaScript Math Object
+Math.round(x) returns the value of x rounded to its nearest integer:
+Math.round(4.7);    // returns 5
+Math.round(4.4);    // returns 4
+
+Math.ceil(x) returns the value of x rounded up to its nearest integer:
+Math.ceil(4.4);     // returns 5
+
+Math.floor(x) returns the value of x rounded down to its nearest integer:
+Math.floor(4.7);    // returns 4
+
+Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
+Math.random();     // returns a random number
+
+************************************************
+
+What is the DOM?(Document Object Model)
+The DOM is a W3C (World Wide Web Consortium) standard.
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+HTML DOM
+When a web page is loaded, the browser creates a Document Object Model of the page
+With the object model, JavaScript gets all the power it needs to create dynamic HTML
+change, remove, add ( HTML elements and attributes )
+change all the CSS styles in the page
+create new HTML events
+react to all existing HTML events in the page
+The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+DOM Element 
+https://www.w3schools.com/jsref/dom_obj_attributes.asp
+Finding HTML elements by
+ id ( getElementById )
+tag name ( getElementsByTagName )
+class name ( getElementsByClassName )
+css selectors ( querySelectorAll("p.intro") )
+html object collections
+         document.anchors
+         document.body
+         document.documentElement
+         document.embeds
+         document.forms
+         document.head
+         document.images
+         document.links
+         document.scripts
+         document.title
+
+
+Changing the Value of an Attribute
+document.getElementById(id).attribute = new value
+
+<img id="myImage" src="smiley.gif">
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+Changing HTML Style
+document.getElementById(id).style.property = new style
+document.getElementById("p2").style.color = "blue";
+
+Creating New HTML Elements (Nodes)
+https://www.w3schools.com/js/js_htmldom_nodes.asp
+https://www.w3schools.com/js/js_htmldom_document.asp
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
