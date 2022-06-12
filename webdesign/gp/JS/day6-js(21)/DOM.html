@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="demo">Hello</div>
+    <div>Hello 2</div>
+    <div>Hello 3</div> -->
+
+    <!-- <img id="myImg" src="https://images.pexels.com/photos/12125024/pexels-photo-12125024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""> -->
+    <script>
+      // document.getElementById("myImg").src = "https://images.pexels.com/photos/12199828/pexels-photo-12199828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+
+      // document.getElementById("demo").style.backgroundColor = "green";
+
+      // document.getElementsByTagName("div")[0].style.backgroundColor = "green";
+      // document.getElementsByTagName("div")[1].style.backgroundColor = "green";
+      // document.getElementsByTagName("div")[2].style.backgroundColor = "green";
+
+      // let divNames = document.getElementsByTagName("div")
+      // for(let i = 0; i < divNames.length; i++){
+      //     divNames[i].style.backgroundColor = "yellow";
+      //     divNames[i].style.fontSize = "40px";
+      // }
+
+      let myDiv = document.createElement("div");
+      let textNode = document.createTextNode("Hello js");
+      myDiv.appendChild(textNode);
+      console.log(myDiv);
+      
+    </script>
+  </body>
+</html>

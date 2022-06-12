@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Creating an Object from a JSON String</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      //   const txt = '{"name":"John", "age":30, "city":"New York"}';
+      //   console.log(txt);
+      //   const obj = JSON.parse(txt);
+      //   console.log(obj);
+      //   document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+
+      const obj = { name: "John", age: 30, city: "New York" };
+      console.log(obj)
+      const myJSON = JSON.stringify(obj);
+      console.log(myJSON)
+      document.getElementById("demo").innerHTML = myJSON;
+    </script>
+  </body>
+</html>
