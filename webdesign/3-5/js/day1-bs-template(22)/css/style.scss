@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgba(34, 56, 82, 0.9);
+}
+
+.main {
+    background-image: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
+    height: 100vh;
+    .custom-main-item{
+        height: 80vh;
+    }
+    .bg-img{
+       border-radius: 49% 51% 37% 63% / 44% 43% 57% 56%;
+       background: linear-gradient(
+        to right,
+        #4ac29a,
+        #bdfff3
+      );
+       max-width: 350px;
+       height: 350px;
+       i{
+        font-size: 9rem;
+    }
+    }
+   
+}
+
+.custom-shape-divider-bottom-1655478784 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1655478784 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1655478784 .shape-fill {
+    fill: #FFFFFF;
+}
