@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f1f1f1;
+      }
+      .container {
+        color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .button-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 30px;
+        background: linear-gradient(
+          to right bottom,
+          #383838,
+          #1e1e1e,
+          #020202 80%
+        );
+      }
+      .button {
+        border: 1px solid #535353;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+      }
+      .button:hover {
+        background-color: #f1f1f1;
+        color: #1e1e1e;
+        transition: 0.3s;
+      }
+      #display {
+        background-color: #494545;
+        line-height: 30px;
+        height: 70px;
+        padding: 20px;
+        text-align: right;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display"></div>
+      <div class="button-container">
+        <div class="button">C</div>
+        <div class="button">/</div>
+        <div class="button">*</div>
+        <div class="button">DEL</div>
+        <div class="button">7</div>
+        <div class="button">8</div>
+        <div class="button">9</div>
+        <div class="button">-</div>
+        <div class="button">4</div>
+        <div class="button">5</div>
+        <div class="button">6</div>
+        <div class="button">+</div>
+        <div class="button">1</div>
+        <div class="button">2</div>
+        <div class="button">3</div>
+        <div class="button">.</div>
+        <div class="button">(</div>
+        <div class="button">0</div>
+        <div class="button">)</div>
+        <div class="button">=</div>
+      </div>
+    </div>
+
+    <script>
+      let display = document.getElementById("display");
+      let buttons = Array.from(document.getElementsByClassName("button"));
+      buttons.map((button) => {
+        button.addEventListener("click", (e) => {
+          let targetText = e.target.innerText;
+          switch (targetText) {
+            case "=":
+              try {
+                display.innerText = Function("return " + display.innerText)();
+              } catch {
+                display.innerText = "0";
+              }
+              break;
+            case "C":
+                display.innerText = "";
+                break;
+            case "DEL":
+                display.innerText = display.innerText.slice(0, -1);
+                break;
+            default: 
+                display.innerText += targetText;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
