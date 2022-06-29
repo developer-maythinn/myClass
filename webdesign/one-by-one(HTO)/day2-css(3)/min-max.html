@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: violet;
+            padding: 30px;
+        }
+        .normal, .max, .min{
+            margin: 40px;
+            background-color: #fff;
+            /* padding: 10px; */
+            display: inline-block;
+        }
+        .normal{
+            width: 800px;
+        }
+        .max{
+            max-width: 800px;
+        }
+        .min{
+            min-width: 100px;
+        }
+        input[type = "text"]{
+            background-color: red;
+        }
+        div[class = "max"]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum voluptates adipisci minus accusantium iste voluptatem. Itaque facilis minus necessitatibus asperiores non omnis, consequuntur placeat qui rerum voluptas. Incidunt, eveniet blanditiis?</div>
+        <div class="max">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam itaque nisi delectus, earum, a id voluptas fugiat dignissimos pariatur repudiandae qui, rem placeat eaque animi sit doloribus exercitationem quas nam.
+        </div>
+        <div class="min">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus amet eius aut dolorum mollitia ipsa minima sed quod! Mollitia ipsum perspiciatis velit neque cupiditate, quidem temporibus? Sunt unde porro eaque.
+        </div>
+      
+    
+    </div>
+    <input type="text">
+    <input type="email">
+</body>
+</html>
