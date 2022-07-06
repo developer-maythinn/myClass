@@ -115,7 +115,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 500px;
+        // height: 500px;
         max-height: 600px;
         i{
             font-size: 5vw;
@@ -137,6 +137,121 @@ a{
         }
     }
 }
+
+#team{
+    h2{
+        text-align: center;
+        text-decoration: overline rgb(47, 210, 227);
+    }
+    .card-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 50px 50px;
+        column-gap: 40px;
+        .card{
+            width: 100%;
+            max-height: 400px;
+            padding: 20px;
+            background: linear-gradient(45deg, #e3e230, rgb(47, 210, 227));
+            .img-container{
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                img{
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                    transition: 1s;
+                }
+            }
+            .img-container:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            .card-content{
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#contact{
+    height: 90vh;
+    background-color: #1e1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-form{
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 15px;
+            input:not(input[type="button"]), textarea{
+                width: 80vw;
+                max-width: 400px;
+            }
+            input, textarea{
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: 0;
+            }
+            input:focus, textarea:focus{
+                outline: 2px solid #e3e230;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: rgb(42, 38, 38);
+    p{
+        color: #fafafa;
+    }
+    .social-container{
+        display: flex;
+        a{
+            margin: 10px;
+            width: 35px;
+            height: 35px;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a:nth-child(1){
+            background-color: #3c5997;
+        }
+        a:nth-child(2){
+            background-color: #784f99;
+        }
+        a:nth-child(3){
+            background-color: #1ea1f1;
+        }
+        a:nth-child(4){
+            background-color: #2578b0;
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 992px) { // mobile and tablet
     #banner{
         header{
@@ -166,7 +281,22 @@ a{
             margin-right: 0px;
         }
         .about-container{
-            padding: 24px;
+            margin: 24px;
+        }
+    }
+
+    #team{
+        .card-container{
+            display: block;
+            .card{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    footer{
+        justify-content: center;
+        p{
+            margin-bottom: 10px;
         }
     }
 }
