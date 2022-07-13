@@ -1,0 +1,7 @@
+https://web.dev/min-max-clamp/
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+
+https://www.shapedivider.app/
+
+https://9elements.github.io/fancy-border-radius/#48.48.52.64--329.328
