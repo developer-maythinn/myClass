@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: rgba(34, 56, 82, 0.9);
+  font-family: "Poppins", sans-serif;
 }
 
 #main {
@@ -47,7 +48,7 @@
 }
 
 .custom-shape-divider-bottom-1657726925 .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .profile {
@@ -62,5 +63,25 @@
           transform: skewY(7deg);
   -webkit-box-shadow: -10px 10px, -15px 10px 30px;
           box-shadow: -10px 10px, -15px 10px 30px;
+}
+
+.card-container {
+  background-image: url("../img.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-container .sub-card-container {
+  height: 100%;
+}
+
+.card-container .sub-card-container .custom-card {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

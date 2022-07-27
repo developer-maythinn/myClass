@@ -1,0 +1,3 @@
+https://hype4.academy/tools/glassmorphism-generator
+https://css-tricks.com/the-sass-ampersand/
+https://www.w3schools.com/react/react_sass_styling.asp
