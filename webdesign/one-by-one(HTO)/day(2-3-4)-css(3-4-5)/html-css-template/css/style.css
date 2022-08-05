@@ -6,8 +6,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -22,15 +21,9 @@ a {
 }
 
 #banner header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   width: 100%;
   padding: 20px 30px;
@@ -40,13 +33,10 @@ a {
 #banner header img {
   width: 50px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 #banner header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -62,16 +52,14 @@ a {
 #banner img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #banner .content {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
   max-width: 600px;
   text-align: center;
@@ -107,7 +95,6 @@ a {
 #banner .content a:hover {
   background-color: #e3e230;
   color: rgba(0, 0, 0, 0.6);
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -121,36 +108,22 @@ a {
 }
 
 #about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 50px;
 }
 
 #about img {
   width: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-right: 20px;
 }
 
 #about .about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   max-height: 600px;
 }
 
@@ -160,8 +133,7 @@ a {
 }
 
 #about .about-container .fa-quote-right {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 #about .about-container .about-content h2 {
@@ -177,23 +149,15 @@ a {
 
 #team h2 {
   text-align: center;
-  -webkit-text-decoration: overline #2fd2e3;
-          text-decoration: overline #2fd2e3;
+  text-decoration: overline #2fd2e3;
 }
 
 #team .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin: 20px 50px 50px;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
+  column-gap: 40px;
 }
 
 #team .card-container .card {
@@ -212,15 +176,12 @@ a {
 #team .card-container .card .img-container img {
   width: inherit;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: 1s;
+  object-fit: cover;
   transition: 1s;
 }
 
 #team .card-container .card .img-container:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #team .card-container .card .card-content {
@@ -231,19 +192,10 @@ a {
 #contact {
   height: 90vh;
   background-color: #1e1c1c;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact h2 {
@@ -253,19 +205,10 @@ a {
 }
 
 #contact .contact-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   row-gap: 15px;
 }
 
@@ -285,17 +228,10 @@ a {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 30px;
   background-color: #2a2626;
 }
@@ -305,8 +241,6 @@ footer p {
 }
 
 footer .social-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -316,15 +250,9 @@ footer .social-container a {
   height: 35px;
   color: #fff;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-container a:nth-child(1) {
@@ -362,10 +290,7 @@ footer .social-container a:nth-child(4) {
     margin-top: 0;
   }
   #about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0;
   }
   #about img {
@@ -382,9 +307,7 @@ footer .social-container a:nth-child(4) {
     margin-bottom: 20px;
   }
   footer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   footer p {
     margin-bottom: 10px;

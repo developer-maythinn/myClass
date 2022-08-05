@@ -1,0 +1,13 @@
+
+$primary: #128923;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "customlight": #c277d6,
+    "customdark": #ac19d5
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';

@@ -1,0 +1,37 @@
+for falling effect
+https://www.npmjs.com/package/confetti-js
+
+for Google font effect
+https://developers.google.com/fonts/docs/getting_started
+
+for border radius
+https://9elements.github.io/fancy-border-radius
+
+for shape
+https://www.shapedivider.app/
+
+for color
+https://www.elegantthemes.com/blog/resources/color-palette-generators
+https://www.colorhexa.com/
+https://mycolor.space/
+https://www.happyhues.co/
+https://color.adobe.com/create/color-wheel
+
+for background gradient
+https://uigradients.com/
+https://cssgradient.io/
+https://www.joshwcomeau.com/gradient-generator/
+
+for box-shadow
+https://html-css-js.com/css/generator/box-shadow/
+
+for icon
+https://boxicons.com/usage#animation
+
+For api
+https://jsonplaceholder.typicode.com/posts
+
+https://css-tricks.com/css3-gradients/
+
+Codepen
+https://codepen.io/utilitybend/pen/VwXPeZj

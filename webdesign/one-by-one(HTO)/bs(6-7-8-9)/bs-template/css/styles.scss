@@ -5,6 +5,7 @@
   color: rgba(34, 56, 82, 0.9);
   font-family: "Poppins", sans-serif;
 }
+
 #main {
   background: linear-gradient(to left, rgb(36, 59, 85), rgb(20, 30, 48));
   min-height: 100vh;
@@ -67,5 +68,41 @@
       border-radius: 10px;
       padding: 30px;
     }
+  }
+}
+.carousel{
+  .custom-carousel-item{
+    height: 400px;
+    position: relative;
+    .img-wrapper{
+      background: linear-gradient(45deg,  #fed350 50%, #a2f1de 50%);
+      width: 100%;
+      height: 300px;
+      img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        position: absolute;
+        top: 33%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+        border: 2px solid pink;
+      }
+    }
+    p{
+      position: absolute;
+      top: 170px;
+      background-color: #fff;
+      padding: 56px 30px;
+      border-radius: 20%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .card-container{
+    height: auto;
+   padding-top: 20px;
   }
 }
