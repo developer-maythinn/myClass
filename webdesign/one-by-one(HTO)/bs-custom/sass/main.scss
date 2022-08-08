@@ -1,0 +1,50 @@
+
+$primary: #eddb39;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$custom-theme-colors: (
+    "customlight": #c277d6,
+    "customdark": #ac19d5
+);
+
+// $utilities: (
+//   "opacity": (
+//     property: opacity,
+//     class: MTK,
+//     values: (
+//       0: 0,
+//       25: .25,
+//       50: .5,
+//       75: .75,
+//       100: 1,
+//     )
+//   )
+// );
+
+// Generating all colors(find bg-purple, etc... from colors)
+// @each $color, $value in $colors{
+//     .bg-#{$color} {
+//         background-color: $value !important;
+//     }
+//     .text-#{$color}{
+//         color: $value !important;
+//     }
+// }
+
+// Generating all shades of purple
+@each $key, $value in $purples {
+    .bg-#{$key}{
+        background-color: $value !important;
+    }
+    .text-#{$key}{
+        color: $value !important;
+    }
+}
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';

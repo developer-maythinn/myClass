@@ -1,0 +1,5 @@
+go to setting => type "live sass format" in search => edit in setting.json => {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
