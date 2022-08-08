@@ -1,5 +1,75 @@
 $primary: rgb(203, 33, 237);
-$success: rgb(72, 0, 255);
+// $success: rgb(72, 0, 255);
 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "customlight": #c277d6,
+  "customdark": #ac19d5,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities";
+
+$utilities: (
+  "padding": (
+    property: padding,
+    class: p,
+    values: (
+      0: 0px,
+      25: 0.25rem,
+      50: 0.5rem,
+      75: 0.75rem,
+      100: 1rem,
+      200: 2rem,
+    ),
+  ),
+);
+
+$custom-colors: (
+  "customlight": #c277d6,
+  "customdark": #ac19d5,
+);
+
+// @each $color, $value in $custom-colors{
+//     .bg-#{$color}{
+//         background-color: $value !important;
+//     }
+//     .text-#{$color}{
+//         color: $value !important;
+//     }
+// }
+
+@each $key, $value in $purples {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+  .text-#{$key} {
+    color: $value !important;
+  }
+}
+// $custom-gray-colors: (
+//     "gray-100": #f8f9fa,
+//     "gray-200": #e9ecef
+// );
+
+// @each $key, $value in $custom-gray-colors{
+//     .bg-#{$key} {
+//       background-color: $value !important;
+//     }
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+@each $key, $value in $grays{
+    .bg-gray-#{$key} {
+      background-color: $value !important;
+    }
+    .text-gray-#{$key} {
+      color: $value !important;
+    }
+  }
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
