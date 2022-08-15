@@ -37,6 +37,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fredoka+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/animated-counter-prograssbar.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -58,10 +60,15 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <div
+                  class="collapse navbar-collapse flex-grow-0"
+                  id="navbarNav"
+                >
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Events</a>
@@ -85,24 +92,94 @@
             <div class="position-relative">
               <img src="assets/images/main-slider-2-2.jpeg" alt="" />
               <p class="position-absolute top-50 text-white">Hello 2</p>
-
             </div>
             <div class="position-relative">
               <img src="assets/images/main-slider-2-3.jpeg" alt="" />
               <p class="position-absolute top-50 text-white">Hello 3</p>
-
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <div class="progressbar-item">
+          <h4 class="progress-title">Photoshop</h4>
+          <div progress-bar data-percentage="80%">
+            <div class="progress-number">
+              <div class="progress-number-mark">
+                <span class="percent"></span>
+                <span class="down-arrow"></span>
+              </div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
 
+        <div class="progressbar-item">
+          <h4 class="progress-title">Web Development</h4>
+          <div progress-bar data-percentage="60%">
+            <div class="progress-number">
+              <div class="progress-number-mark">
+                <span class="percent"></span>
+                <span class="down-arrow"></span>
+              </div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="progressbar-item">
+          <h4 class="progress-title">UI/UX</h4>
+          <div progress-bar data-percentage="50%">
+            <div class="progress-number">
+              <div class="progress-number-mark">
+                <span class="percent"></span>
+                <span class="down-arrow"></span>
+              </div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-container">
+      <div class="skills">
+        <h2>HTML</h2>
+        <div class="progress-bar">
+          <div class="html"><span>86%</span></div>
+        </div>
+        <h2>CSS</h2>
+        <div class="progress-bar">
+          <div class="css"><span>86%</span></div>
+        </div>
+        <h2>Javascript</h2>
+        <div class="progress-bar">
+          <div class="js"><span>86%</span></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-bg"></div>
+      <div class="container footer-content">
+        <div class="row">
+          <h2>Hello World</h2>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="css/animated-counter-prograssbar.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"
       integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
@@ -113,6 +190,10 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       $(document).ready(function () {
         $(".single-carousel").slick({
