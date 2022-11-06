@@ -1,13 +1,35 @@
-
 $primary: #128923;
 
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
 $custom-theme-colors: (
-    "customlight": #c277d6,
-    "customdark": #ac19d5
+  "customlight": #c277d6,
+  "customdark": #ac19d5,
 );
+.custom-container {
+  position: relative;
+  height: 80px;
+  background: pink;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  font-size: 1.5rem;
+  .custom-sign {
+    position: absolute;
+    top: 25%;
+    z-index: 1;
+    height: inherit;
+  }
+  .custom-text {
+    background-color: transparent;
+    text-align: right;
+    border: 0;
+    &:focus {
+      box-shadow: initial;
+    }
+  }
+}
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";

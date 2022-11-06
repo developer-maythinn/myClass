@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <style>
+      /* input[type="text"]::-webkit-input-placeholder {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
     <button class="bg-customlight">customlight</button>
     <button class="bg-customdark">customdark</button>
     <button class="bg-light">light</button>
-</body>
+    <div class="form-group custom-container">
+        <div class="custom-sign">$</div>
+      <input
+        type="text"
+        class="text-danger form-control custom-text"
+        placeholder="Hello"
+        required
+      />
+    </div>
+  </body>
 </html>
