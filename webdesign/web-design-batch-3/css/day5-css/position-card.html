@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        background-color: violet;
+        position: relative;
+        margin: 50px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .container img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+      .detail {
+        /* height: inherit; */
+        position: absolute;
+        bottom: 0;
+        /* background-color: pink; */
+        background-color: rgba(192, 255, 200, 0.3);
+        width: inherit;
+        text-align: center;
+        padding: 20px 0px;
+        /* opacity: 0.5; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.pexels.com/photos/12488389/pexels-photo-12488389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="image"
+      />
+      <div class="detail">
+        <h2>Heading 2</h2>
+        <p>This is Paragraph.</p>
+      </div>
+    </div>
+  </body>
+</html>
