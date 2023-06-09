@@ -41,6 +41,6 @@ body {
   h1 {
     color: #000;
     // @include flex_center;
-    @include flex_center_color(20vh, green, flex-start);
+    @include flex_center_color(20vh, green, flex-start, 10px solid red);
   }
 }

@@ -5,10 +5,11 @@
   justify-content: center;
 }
 
-@mixin flex_center_color($height, $color, $align) {
+@mixin flex_center_color($height, $color, $align, $border) {
   background-color: $color;
   height: $height;
   display: flex;
   align-items: $align;
   justify-content: center;
+  border: $border;
 }
