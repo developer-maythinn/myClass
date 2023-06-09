@@ -339,6 +339,7 @@ footer .social a:hover {
   justify-content: center;
   display: flex;
 }
+
 #contact h2 {
   padding: 30px 0px 20px;
 }
@@ -367,5 +368,8 @@ footer .social a:hover {
   #contact .contact-form :not(input[type="button"]) {
     width: 300px;
     flex-basis: content;
+  }
+  #contact {
+    align-items: initial;
   }
 }

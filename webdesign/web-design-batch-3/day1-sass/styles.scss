@@ -1,5 +1,6 @@
 @import "./variables";
 @import "./flexCenter";
+@import "./buttons";
 
 * {
   padding: 0;
@@ -25,8 +26,7 @@ body {
       padding: 50px;
     }
     button {
-      background-color: $mainColor;
-      padding: 10px 20px;
+      @extend .button-styles;
     }
   }
 }

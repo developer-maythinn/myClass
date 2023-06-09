@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.banner header {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 40px 30px;
+}
+
+.banner header .logo {
+  font-size: 26px;
+  color: #fff;
+}
+
+.banner header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner header .nav-container li {
+  padding: 20px;
+}
+
+.banner header .nav-container li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.banner .banner-image {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.banner .content {
+  position: absolute;
+  inset: 0;
+  bottom: 100px;
+  height: 0;
+  margin: auto;
+  max-width: 600px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.banner .content h1 span {
+  color: yellow;
+}
+
+.banner .content p {
+  font-size: 20px;
+}
+
+.banner .content .learn-more-btn {
+  padding: 8px 10px;
+  color: yellow;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.banner .content .learn-more-btn:hover {
+  background: yellow;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 1s;
+}
+
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=styles.css.map */
