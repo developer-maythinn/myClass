@@ -39,6 +39,25 @@ a {
           font-size: 20px;
         }
       }
+      .dropdown-container {
+        position: relative;
+        .dropdown {
+          position: absolute;
+          background: #fafafa;
+          padding: 10px;
+          border-radius: 6px;
+          color: rgba(0, 0, 0, 0.6);
+          display: none;
+          li {
+            padding: 4px 0px;
+          }
+        }
+      }
+      .dropdown-container:hover {
+        .dropdown {
+          display: block;
+        }
+      }
     }
   }
   .banner-image {
@@ -91,4 +110,76 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media (max-width: 768px) {
+  .banner {
+    header {
+      flex-wrap: wrap;
+      padding: 14px 16px;
+      .logo {
+        font-size: 25px;
+        margin: 0 auto;
+      }
+      .nav-container {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+    .content {
+      padding: 0px 20px;
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  .about-img {
+    width: 50%;
+  }
+  .about-container {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    .quote-style {
+      font-size: 5vw;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .fa-quote-right {
+      align-self: flex-end;
+    }
+    .about-content {
+      .title {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+      }
+      p {
+        text-indent: 50px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    .about-img {
+      width: 100%;
+    }
+    .about-container {
+      .quote-style {
+        visibility: hidden;
+      }
+    }
+  }
 }

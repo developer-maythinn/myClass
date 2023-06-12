@@ -50,6 +50,27 @@ a {
   font-size: 20px;
 }
 
+.banner header .nav-container .dropdown-container {
+  position: relative;
+}
+
+.banner header .nav-container .dropdown-container .dropdown {
+  position: absolute;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.banner header .nav-container .dropdown-container .dropdown li {
+  padding: 4px 0px;
+}
+
+.banner header .nav-container .dropdown-container:hover .dropdown {
+  display: block;
+}
+
 .banner .banner-image {
   width: 100%;
   height: inherit;
@@ -106,5 +127,77 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 768px) {
+  .banner header {
+    flex-wrap: wrap;
+    padding: 14px 16px;
+  }
+  .banner header .logo {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .banner header .nav-container li {
+    padding: 10px;
+  }
+  .banner .content {
+    padding: 0px 20px;
+  }
+  .banner .content h1 {
+    font-size: 25px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+}
+
+.about .about-img {
+  width: 50%;
+}
+
+.about .about-container {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about .about-container .quote-style {
+  font-size: 5vw;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.about .about-container .fa-quote-right {
+  align-self: flex-end;
+}
+
+.about .about-container .about-content .title {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.about .about-container .about-content p {
+  text-indent: 50px;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .about .about-img {
+    width: 100%;
+  }
+  .about .about-container .quote-style {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

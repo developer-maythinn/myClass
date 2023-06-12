@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Banner -->
     <div class="banner">
       <header>
         <a href="#" class="logo">logo</a>
@@ -29,8 +30,13 @@
           <li>
             <a href="">About</a>
           </li>
-          <li>
+          <li class="dropdown-container">
             <a href="">Portfolio <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li>Portfolio 1</li>
+              <li>Portfolio 2</li>
+              <li>Portfolio 3</li>
+            </ul>
           </li>
           <li>
             <a href="">Contact</a>
@@ -52,5 +58,32 @@
         <a href="#" class="learn-more-btn">Learn more</a>
       </div>
     </div>
+    <!-- About -->
+    <section class="about" id="about">
+      <img
+        src="https://images.pexels.com/photos/2422293/pexels-photo-2422293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt=""
+        class="about-img"
+      />
+      <div class="about-container">
+        <i class="fa-solid fa-quote-left quote-style"></i>
+        <div class="about-content">
+          <h2 class="title">About us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            consequuntur ad omnis, doloremque itaque nam quaerat aspernatur
+            dolor rerum veniam porro beatae quia molestias reprehenderit
+            perspiciatis nisi aliquid ex? Rerum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+            placeat quas aperiam, sequi soluta non officiis beatae illum
+            veritatis totam ducimus molestias natus ex, animi dolor id ut nulla
+            hic.
+          </p>
+        </div>
+        <i class="fa-solid fa-quote-right quote-style"></i>
+      </div>
+    </section>
   </body>
 </html>
