@@ -17,13 +17,6 @@ Other pages that reference the same script will take it from the cache instead o
 That reduces traffic and makes pages faster.
 
 ***************************************************
-JavaScript Can Change HTML Content
-<p id="demo"></p>
-<script>
-document.getElementById("demo").innerHTML = "Hello World";
-</script> 
-
-***************************************************
 Comments
 One-line comments start with two forward slash characters //
 Multiline comments /* */
