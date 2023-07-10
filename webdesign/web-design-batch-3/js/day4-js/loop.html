@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   for (let i = 1; i <= 100; i++) {
+      //     console.log("Hello " + i); // hello 1
+      //   }
+
+      //   For in
+      let person = {
+        name: "John",
+        age: 20,
+        city: "Yangon",
+      };
+      //   console.log(person.name);
+      //   console.log(person.age);
+      //   console.log(person.city);
+
+      for (let key in person) {
+        console.log(person[key]);
+      }
+
+      // For of
+
+      let colors = ["white", "red", "green", "yellow"];
+      //   console.log(colors[0]);
+      //   console.log(colors[1]);
+      //   console.log(colors[2]);
+      //   console.log(colors[3]);
+
+      for (let color of colors) {
+        console.log(color);
+      }
+    </script>
+  </body>
+</html>

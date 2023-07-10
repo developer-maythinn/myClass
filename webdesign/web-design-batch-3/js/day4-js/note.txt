@@ -49,3 +49,18 @@ Example:
 for (i = 0; i < 5; i++) {
   text += "The number is " + i + "<br>";
 }
+
+****************
+
+The For/In Loop
+The JavaScript for/in statement loops through the properties of an object:
+
+The For/Of Loop
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+Loop over array
+var cars = ['BMW', 'Volvo', 'Mini'];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}
