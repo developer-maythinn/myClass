@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let user1 = {
+      //     name: "John",
+      //     age: 30,
+      //   };
+
+      //   let user = new Object();
+      //   user.name = "John";
+      //   user.age = 30;
+      //   console.log(user);
+
+      //   function myFruit(name, price, city) {
+      //     this.fruitName = name;
+      //     this.fruitPrice = price;
+      //     this.city = city;
+      //   }
+      //   let myObj = new myFruit("Apple", "$10", "YGN");
+      //   console.log(myObj.fruitName);
+
+      //   let user = {
+      //     name: "John",
+      //     age: 30,
+      //     parent: {
+      //       fatherName: "Jobs",
+      //       motherName: "Amelia",
+      //     },
+      //   };
+      //   console.log(user.parent.fatherName, user.parent.motherName);
+      //   delete user.age;
+      //   console.log(user);
+
+      //   const user = {
+      //     name: "May",
+      //   };
+      //   user.name = "Khine";
+      //   console.log(user.name);
+
+      //   function user(name, age) {
+      //     return {
+      //       name, // name: name,
+      //       age, // age: age
+      //     };
+      //   }
+      //   console.log(user("May", 20));
+
+      //   let user = {
+      //     name: "John",
+      //     age: 30,
+      //   };
+      //   let admin = user;
+      //   admin.name = "Steve";
+
+      //   console.log(user); // Steve
+      //   console.log(admin); // Steve
+
+      let user = {
+        name: "John",
+        age: 30,
+      };
+
+      let clone = {};
+      for (let key in user) {
+        clone[key] = user[key];
+      }
+      clone.name = "Rose";
+      console.log(clone);
+      console.log(user);
+    </script>
+  </body>
+</html>
