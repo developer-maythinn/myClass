@@ -41,14 +41,14 @@ Array Method
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 https://www.w3schools.com/js/js_array_methods.asp
 
-arr.length => length of arrray
+arr.length => length of array
 toString()  => Converting Arrays to Strings
 All JavaScript objects have a toString() method.
 arr.push(...items) – adds items to the end,
 arr.pop() – extracts an item from the end,
 arr.shift() – extracts an item from the beginning,
 arr.unshift(...items) – adds items to the beginning,
- splice() =>  can be used to add new items to an array
+splice() =>  can be used to add new items to an array
    Example: var fruits = ["Banana", "Orange", "Apple", "Mango"];
                    fruits.splice(2, 0, "Lemon", "Kiwi");
 The first parameter (2) defines the position where new elements should be added (spliced in).
@@ -57,6 +57,10 @@ The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be adde
 splice() => returns an array with the deleted items:
 fruits.splice(2, 2, "Lemon", "Kiwi");
 fruits.splice(0, 1);
+
+************* start homework
+
+
 concat() => creates a new array by merging (concatenating) existing arrays:
 slice() => slices out a piece of an array into a new array.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
@@ -84,6 +88,8 @@ var cars = [
   {type:"BMW", year:2010}
 ];
 cars.sort(function(a, b){return a.year - b.year});
+************* end homework
+
 
 Array.forEach()
 forEach() => calls a function (a callback function) once for each array element.
