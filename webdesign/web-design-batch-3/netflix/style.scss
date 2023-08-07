@@ -77,6 +77,7 @@ h2 {
   align-items: center;
   position: relative;
   z-index: 1;
+
   .left-side {
     width: 50%;
   }
@@ -91,6 +92,28 @@ h2 {
         top: 96px;
         left: 83px;
         z-index: -1;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    .left-side {
+      width: 100%;
+    }
+    .right-side {
+      width: 100%;
+      .wrapper {
+        img {
+          width: 100%;
+        }
+        video {
+          top: 66px;
+          left: 54px;
+          width: 300px;
+        }
       }
     }
   }

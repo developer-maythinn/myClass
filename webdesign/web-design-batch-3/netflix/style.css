@@ -80,4 +80,25 @@ h2 {
   left: 83px;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .left-side {
+    width: 100%;
+  }
+  .container .right-side {
+    width: 100%;
+  }
+  .container .right-side .wrapper img {
+    width: 100%;
+  }
+  .container .right-side .wrapper video {
+    top: 66px;
+    left: 54px;
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
