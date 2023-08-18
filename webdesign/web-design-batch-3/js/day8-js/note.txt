@@ -1,0 +1,185 @@
+
+************************************************************** 
+Number Methods
+https://www.w3schools.com/Jsref/jsref_parseint.asp
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+**************************************************************
+String Methods and Properties
+length => length of a string
+indexOf() => the index of (the position of) the first occurrence of a specified text
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate"); // output 7 (count with space)
+lastIndexOf() =>searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+search()
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+replace()
+
+********* start homework **********
+
+toUpperCase()
+toLowerCase()
+concat()
+trim() => removes whitespace from both sides of a string
+charAt() => returns the character at a specified index (position) in a string
+split() => a string can be converted to an array
+
+Extracting String Parts
+https://www.w3schools.com/js/js_string_methods.asp
+There are 3 methods for extracting a part of a string:
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+********* end homework **********
+
+**************************************************************
+JavaScript Math Object
+Math.round(x) returns the value of x rounded to its nearest integer:
+Math.round(4.7);    // returns 5
+Math.round(4.4);    // returns 4
+
+Math.ceil(x) returns the value of x rounded up to its nearest integer:
+Math.ceil(4.4);     // returns 5
+
+Math.floor(x) returns the value of x rounded down to its nearest integer:
+Math.floor(4.7);    // returns 4
+
+Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):
+Math.random();     // returns a random number
+
+**********************************************
+
+What is the DOM?(Document Object Model)
+The DOM is a W3C (World Wide Web Consortium) standard.
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+HTML DOM
+When a web page is loaded, the browser creates a Document Object Model of the page
+With the object model, JavaScript gets all the power it needs to create dynamic HTML
+change, remove, add ( HTML elements and attributes )
+change all the CSS styles in the page
+create new HTML events
+react to all existing HTML events in the page
+The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+DOM Element 
+https://www.w3schools.com/jsref/dom_obj_attributes.asp
+Finding HTML elements by
+ id ( getElementById )
+tag name ( getElementsByTagName )
+class name ( getElementsByClassName )
+css selectors ( querySelectorAll("p.intro") )
+html object collections
+         document.anchors
+         document.body
+         document.documentElement
+         document.embeds
+         document.forms
+         document.head
+         document.images
+         document.links
+         document.scripts
+         document.title
+
+
+Changing the Value of an Attribute
+document.getElementById(id).attribute = new value
+
+<img id="myImage" src="smiley.gif">
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+Changing HTML Style
+document.getElementById(id).style.property = new style
+document.getElementById("p2").style.color = "blue";
+
+Creating New HTML Elements (Nodes)
+https://www.w3schools.com/js/js_htmldom_nodes.asp
+https://www.w3schools.com/js/js_htmldom_document.asp
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+appendChild() => appended the new element as the last child of the parent.
+insertBefore() => If you don't want appendChild() that you can use insertBefore()
+remove() => remove an HTML element
+removeChild() => For browsers that does not support the remove() method, you have to find the parent node to remove an element:
+https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+</script>
+replaceChild() => replace an element to the HTML DOM
+
+
+Dom Events
+https://www.w3schools.com/js/js_htmldom_events.asp
+
+
+JavaScript HTML DOM EventListener
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+element.addEventListener(event, function, useCapture);
+
+element.addEventListener("click", function(){ alert("Hello World!"); });
+
+element.addEventListener("click", myFunction);
+function myFunction() {
+  alert ("Hello World!");
+}
+
+**************************************************************
+https://www.w3schools.com/js/js_date_methods.asp
+
+**************************************************************
+JavaScript Timing Events
+https://www.w3schools.com/js/js_timing.asp
+
+**************************************************************
+JSON
+https://www.w3schools.com/js/js_json_intro.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+Json format
+{ "name":"John", "age":30, "city":"New York"}
+JSON.stringify to convert objects into JSON.
+JSON.parse to convert JSON back into an object.
+
+JSON supports following data types:
+Objects { ... }
+Arrays [ ... ]
+Primitives:
+strings,
+numbers,
+boolean values true/false,
+null.
