@@ -1,53 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f1f1f1;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
 }
-.container{
-    /* background-color: aqua; */
-    border-radius: 16px;
-    overflow: hidden;
+.container {
+  /* background-color: aqua; */
+  border-radius: 16px;
+  overflow: hidden;
 }
-.button-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    background: linear-gradient(
-        to right bottom,
-        #383838,
-        #1e1e1e,
-        #020202 80%
-      );
-      padding: 35px;
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background: linear-gradient(to right bottom, #383838, #1e1e1e, #020202 80%);
+  padding: 35px;
 }
-#display{
-    background-color: #494545;
-    height: 30px;
-    line-height: 50px;
-    text-align: right;
-    font-size: 25px;
-    padding: 20px;
-    color: #f1f1f1;
+#display {
+  background-color: #494545;
+  height: 30px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 25px;
+  padding: 20px;
+  color: #f1f1f1;
 }
-.button{
-    color: #f8fbf4;
-    border: 1px solid #535353;
-    border-radius: 50%;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
+.button {
+  color: #f8fbf4;
+  border: 1px solid #535353;
+  border-radius: 50%;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
 }
-.button:hover{
-    background-color: #f1f1f1;
-    color: #1e1e1e;
-    transition: 0.2s;
+.button:hover {
+  background-color: #f1f1f1;
+  color: #1e1e1e;
+  transition: 0.2s;
 }
