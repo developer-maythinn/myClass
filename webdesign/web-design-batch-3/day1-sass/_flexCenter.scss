@@ -1,0 +1,15 @@
+@mixin flex_center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_center_color($height, $color, $align, $border) {
+  background-color: $color;
+  height: $height;
+  display: flex;
+  align-items: $align;
+  justify-content: center;
+  border: $border;
+}

@@ -1,0 +1,31 @@
+jQuery is a JavaScript Library.
+jQuery is a lightweight, "write less, do more", JavaScript library.
+https://jquery.com/
+https://www.w3schools.com/jquERy/default.asp
+
+Basic syntax
+$(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+
+$(document).ready(function(){
+  // jQuery methods go here...
+});
+
+Use inside a document ready event.
+This is to prevent any jQuery code from running before the document is finished loading (is ready).
+
+
+jQuery events
+Mouse events => click, dblclick, mouseenter, mouseleave
+Keyboard events => keypress, keydown, keyup
+Form Events => submit, change, focus, blur
+Document/Window Events => load, resize, scroll, unload
+https://api.jquery.com/scroll/
+https://www.w3schools.com/jquERy/jquery_events.asp
+
+https://api.jquery.com/
+https://api.jquery.com/css/

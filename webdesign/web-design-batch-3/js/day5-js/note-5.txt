@@ -1,0 +1,87 @@
+
+Loop over string
+var txt = 'JavaScript';
+var x;
+for (x of txt) {
+  document.write(x + "<br >");
+}
+
+While loop
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+Do While loop
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+****************************************************************
+JavaScript Break and Continue (Loop Control)
+The break statement "jumps out" of a loop.
+The continue statement "jumps over" one iteration in the loop.
+
+Break
+for (i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+Continue 
+for (i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+
+JavaScript Labels ( a label name and a colon: )
+labelname:
+break labelname;
+continue labelname;
+
+Example:
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+list: {
+  text += cars[0] + "<br>"; 
+  text += cars[1] + "<br>"; 
+  break list;
+  text += cars[2] + "<br>"; 
+  text += cars[3] + "<br>"; 
+}
+document.getElementById("demo").innerHTML = text;
+
+*******************************************************************
+JavaScript Errors
+https://www.w3schools.com/js/js_errors.asp
+https://www.w3schools.com/jsref/jsref_obj_error.asp
+
+JavaScript try and catch
+try {
+  alert('Welcome');
+  addalert("Welcome guest!"); // for error
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+
+Error Object Properties
+name
+message
+
+Error Name Values
+ReferenceError - An illegal reference has occurred
+SyntaxError -	A syntax error has occurred
+TypeError - A type error has occurred
+

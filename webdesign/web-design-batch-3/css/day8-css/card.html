@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 300px;
+        height: 300px;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 8px 22px #000;
+      }
+      .container img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+      .container .content {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: inherit;
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+      }
+      .container .content p {
+        padding-bottom: 15px;
+      }
+      .container .content .social i {
+        padding: 0px 5px;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt=""
+      />
+      <div class="content">
+        <h3>John</h3>
+        <p>Managing Director</p>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-viber"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

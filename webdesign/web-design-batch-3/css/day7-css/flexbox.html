@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .flex-container {
+        width: 100%;
+        height: 100vh;
+        background-color: hotpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: row-reverse;
+        flex-wrap: wrap; */
+        /* flex-flow: column wrap; */
+      }
+      .flex-container div {
+        width: 200px;
+        height: 100px;
+        background-color: #fafafa;
+        margin: 2px;
+      }
+      .flex-container .div1 {
+        order: 3;
+        align-self: flex-end;
+      }
+      .flex-container .div2 {
+        order: 2;
+        align-self: flex-start;
+        /* flex-grow: 3; */
+      }
+      .flex-container .div3 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="div1">Div1</div>
+      <div class="div2">Div2</div>
+      <div class="div3">Div3</div>
+      <!-- <div>Div4</div>
+      <div>Div5</div>
+      <div>Div6</div>
+      <div>Div7</div>
+      <div>Div8</div>
+      <div>Div9</div> -->
+    </div>
+  </body>
+</html>

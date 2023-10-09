@@ -1,0 +1,8 @@
+<html> // opening tag
+
+</html> // closing tag
+
+<br /> // self closing tag or empty tag
+
+<html></html> // html element 
+<title></title> // title element

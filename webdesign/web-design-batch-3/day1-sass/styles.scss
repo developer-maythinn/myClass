@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./flexCenter";
+@import "./buttons";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $mainColor;
+  color: $whiteColor;
+}
+.container {
+  .cards {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      background: pink;
+      align-self: flex-start;
+    }
+    p {
+      padding: 50px;
+    }
+    button {
+      @extend .button-styles;
+    }
+  }
+}
+.title1 {
+  h1 {
+    @include flex_center;
+    // @include flex_center(100vh, pink, flex-end);
+  }
+}
+
+.title2 {
+  h1 {
+    color: #000;
+    // @include flex_center;
+    @include flex_center_color(20vh, green, flex-start, 10px solid red);
+  }
+}

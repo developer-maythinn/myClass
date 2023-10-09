@@ -1,0 +1,100 @@
+
+Boolean (logical type)
+The boolean type has only two values: true and false.
+let isGreater = 4 > 1;
+alert( isGreater ); // true (the comparison result is "yes")
+
+The “null” value
+It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+
+The “undefined” value
+The meaning of undefined is “value is not assigned”(empty value).
+
+Type of operator
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof (3)            // Returns "number"
+typeof (3 + 4)        // Returns "number"
+typeof 10n // "bigint"
+typeof null // "object" 
+
+Difference Between Undefined and Null
+undefined and null are equal in value but different in type:
+
+typeof undefined           // undefined
+typeof null                // object
+
+null === undefined         // false
+null == undefined          // true
+
+Array
+var cars = ["Saab", "Volvo", "BMW"];
+Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+
+Objects
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+person.age
+
+***********************************************************
+Interaction: alert, prompt, confirm
+alert ( shows a message )
+alert("Hello");
+
+prompt ( shows a message asking the user to input text )
+result = prompt(title, [default]);
+title( The text to show the visitor. )
+default ( An optional second parameter, the initial value for the input field. )
+
+confirm ( shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc. )
+result = confirm(question);
+
+let isBoss = confirm("Are you the boss?");
+alert( isBoss ); // true if OK is pressed
+
+**************************************************************
+
+
+Opreators
+https://javascript.info/operators
+https://www.w3schools.com/js/js_operators.asp
+
+JavaScript Arithmetic Operators
+Addition +,
+Subtraction -,
+Multiplication *,
+Exponentiation **.
+Division /,
+Modulus(Division Remainder) %,
+++	Increment
+--	Decrement
+
+JavaScript Assignment Operators
+=	
++=
+-=
+*=
+/=
+%=
+**=	 
+
+JavaScript String Operators
+let text3 = text1 + " " + text2;
+let y = "5" + 5;
+let z = "Hello" + 5;
+
++=
+let text1 = "What a very ";
+text1 += "nice day";
+
+
+JavaScript Comparison Operators
+https://www.w3schools.com/js/js_comparisons.asp
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to

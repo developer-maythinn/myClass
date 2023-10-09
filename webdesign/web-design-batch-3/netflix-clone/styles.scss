@@ -1,0 +1,306 @@
+@import "./variables";
+
+@font-face {
+  font-display: optional;
+  font-family: NKufi;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: NKufi;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: GraphikTH;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: GraphikTH;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff)
+      format("woff");
+}
+
+.graphik-font-loaded {
+  font-family: GraphikTH, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.netflix-sans-font-loaded {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+  font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+  font-family: GraphikTH, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+.container {
+  min-height: 480px;
+  max-height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/700ff316-5555-4494-a68f-0704302be3c1/MM-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 5rem;
+    .logo {
+      width: 90px;
+      height: 90px;
+    }
+    button {
+      background-color: $primaryColor;
+      border: 0;
+      padding: 5px 12px;
+      border-radius: 3px;
+      color: #fff;
+    }
+  }
+  .content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 320px;
+    padding: 30px 20px;
+    text-align: center;
+    h1 {
+      line-height: 1.3;
+      font-size: clamp(2rem, 3.5vw, 48px);
+    }
+    h4 {
+      font-weight: 400;
+      margin-top: 16px;
+      font-size: 18px;
+    }
+    p {
+      font-size: 18px;
+      padding: 10px;
+      line-height: 1.4;
+      margin-top: 12px;
+    }
+    form {
+      input {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 318px;
+        height: 48px;
+        border: 1px solid #5e5e5e;
+        border-radius: 3px;
+        color: #fff;
+        padding: 0px 12px;
+        font-size: 18px;
+      }
+      button {
+        background-color: $primaryColor;
+        border: 0;
+        padding: 8px 20px;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+hr {
+  height: 8px;
+  background: #232323;
+  border: 0;
+}
+.download-container {
+  background-color: #000;
+  color: #fff;
+  height: 85vh;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .download-content {
+    text-align: center;
+    h2 {
+      line-height: 1.3;
+      font-size: clamp(2rem, 3.5vw, 48px);
+    }
+    p {
+      font-size: clamp(18px, 2.4vw, 24px);
+      margin-top: 5px;
+    }
+  }
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .main-img {
+      width: 100%;
+    }
+    .mini-card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 2px solid #5a5a5a;
+      width: clamp(264px, 60%, 616px);
+      height: clamp(64px, 18%, 104px);
+      border-radius: 10px;
+      position: absolute;
+      bottom: 16px;
+      background-color: #000;
+      .mini-card-img {
+        width: 34px;
+        height: 38px;
+      }
+      .mini-card-content {
+        h5 {
+          line-height: 0.8;
+          font-weight: 500;
+          font-size: clamp(14px, 3vw, 20px);
+        }
+        p {
+          font-size: clamp(12px, 3vw, 20px);
+          color: #0071eb;
+        }
+      }
+      .download-img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // tablet and up
+  .container {
+    height: 50vh;
+    .content {
+      height: 40vh;
+    }
+  }
+  .download-container {
+    height: 75vh;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    height: 82vh;
+    .content {
+      height: 60vh;
+    }
+  }
+  .download-container {
+    width: 80%;
+    height: 70vh;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    .download-content {
+      text-align: initial;
+    }
+  }
+}

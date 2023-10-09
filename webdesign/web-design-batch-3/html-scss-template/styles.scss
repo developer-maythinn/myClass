@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap&effect=fire");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 40px 30px;
+    .logo {
+      font-size: 26px;
+      color: #fff;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        padding: 20px;
+        a {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+      .dropdown-container {
+        position: relative;
+        .dropdown {
+          position: absolute;
+          background: #fafafa;
+          padding: 10px;
+          border-radius: 6px;
+          color: rgba(0, 0, 0, 0.6);
+          display: none;
+          li {
+            padding: 4px 0px;
+          }
+        }
+      }
+      .dropdown-container:hover {
+        .dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+  .banner-image {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  .content {
+    position: absolute;
+    inset: 0;
+    bottom: 100px;
+    height: 0;
+    margin: auto;
+    max-width: 600px;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 500;
+      span {
+        color: yellow;
+      }
+    }
+    p {
+      font-size: 20px;
+    }
+    .learn-more-btn {
+      padding: 8px 10px;
+      color: yellow;
+      border: 1px solid #fff;
+      margin-top: 10px;
+      display: inline-block;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .learn-more-btn:hover {
+      background: yellow;
+      color: rgba(0, 0, 0, 0.6);
+      transition: 1s;
+    }
+  }
+}
+.banner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .banner {
+    header {
+      flex-wrap: wrap;
+      padding: 14px 16px;
+      .logo {
+        font-size: 25px;
+        margin: 0 auto;
+      }
+      .nav-container {
+        li {
+          padding: 10px;
+        }
+      }
+    }
+    .content {
+      padding: 0px 20px;
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  .about-img {
+    width: 50%;
+  }
+  .about-container {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    .quote-style {
+      font-size: 5vw;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .fa-quote-right {
+      align-self: flex-end;
+    }
+    .about-content {
+      .title {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+      }
+      p {
+        text-indent: 50px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    .about-img {
+      width: 100%;
+    }
+    .about-container {
+      .quote-style {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.team {
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    text-decoration: overline #30d2e3;
+  }
+  .team-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+    .card {
+      margin: 20px;
+      padding: 20px;
+      background-image: linear-gradient(45deg, #e3e230, #30d2e3);
+      // max-height: 400px;
+      .img-container {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          // height: inherit;
+          object-fit: cover;
+          transform: scale(1);
+          transition: 1s;
+        }
+      }
+      .img-container:hover {
+        img {
+          transform: scale(1.3);
+        }
+      }
+      .card-content {
+        margin: 20px;
+        h3 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .team-container {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .team-container {
+    .card {
+      width: 60%;
+    }
+  }
+}
+
+.contact {
+  background-color: #1e1c1d;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fafafa;
+  h2 {
+  }
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      input,
+      textarea {
+        display: block;
+        border-radius: 5px;
+        margin: 20px;
+        padding: 10px;
+        background-color: #fafafa;
+        border: 0;
+      }
+      :not(input[type="button"]) {
+        width: 400px;
+      }
+      @media (max-width: 768px) {
+        :not(input[type="button"]) {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  background-color: #2a2626;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0px 50px;
+
+  .social {
+    display: flex;
+    a {
+      width: 35px;
+      height: 35px;
+      margin: 0px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: #fafafa;
+      font-size: 20px;
+    }
+    a:nth-child(1) {
+      background-color: #3b5998;
+    }
+    a:nth-child(2) {
+      background-color: #1ea1f1;
+    }
+    a:nth-child(3) {
+      background-color: #784f99;
+    }
+    a:nth-child(4) {
+      background-color: #2578af;
+    }
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+.testing-border-radius {
+  width: 200px;
+  height: 200px;
+  background-color: hotpink;
+  border-radius: 81% 19% 70% 30% / 14% 67% 33% 86%;
+}

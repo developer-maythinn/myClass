@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Card</title>
+    <link
+      rel="icon"
+      href="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: #000;
+        color: #fff;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 8px 22px #000;
+      }
+      .container img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+      .container .content h3 {
+        color: inherit;
+      }
+      .container .content {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        min-height: 120px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .content p {
+        padding-bottom: 15px;
+      }
+      .container .content .social i {
+        padding: 0px 10px;
+        font-size: 1.2rem;
+      }
+      .item {
+        display: none;
+        width: 200px;
+        height: 100px;
+        border: 2px solid red;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt=""
+      />
+      <div class="content">
+        <h3>John</h3>
+        <p>Managing Director</p>
+        <div class="social">
+          <i class="fa-brands fa-facebook-square"></i>
+          <i class="fa-brands fa-viber"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus
+        quia inventore iure dignissimos perspiciatis perferendis! Quas doloribus
+        impedit distinctio architecto dolorem corrupti, suscipit earum porro
+        ullam vel? Aliquid, ipsum.
+      </p>
+    </div>
+  </body>
+</html>

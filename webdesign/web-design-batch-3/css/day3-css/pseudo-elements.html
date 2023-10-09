@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        color: red;
+      }
+      p::first-letter {
+        color: green;
+      }
+      p::selection {
+        background-color: yellow;
+        color: blueviolet;
+      }
+      p::before {
+        content: "Hello";
+      }
+      p::after {
+        content: "After";
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+      voluptate, dolorum non sint nulla qui laudantium et libero eaque cumque
+      provident aspernatur corrupti doloremque ipsum voluptas expedita iste
+      repellendus iure.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@import "./variables";
+
+.button-styles {
+  background-color: $whiteColor;
+  color: $mainColor;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+}

@@ -1,0 +1,4 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+https://www.youtube.com/watch?v=VQraviuwbzU
+https://www.youtube.com/watch?v=KqFAs5d3Yl8

@@ -1,0 +1,42 @@
+for falling effect
+https://www.npmjs.com/package/confetti-js
+
+for Google font effect
+https://developers.google.com/fonts/docs/getting_started
+
+for border radius
+https://9elements.github.io/fancy-border-radius
+
+for shape
+https://www.shapedivider.app/
+
+for color
+https://www.elegantthemes.com/blog/resources/color-palette-generators
+https://www.colorhexa.com/
+https://mycolor.space/
+https://www.happyhues.co/
+https://color.adobe.com/create/color-wheel
+
+for background gradient
+https://uigradients.com/
+
+for box-shadow
+https://html-css-js.com/css/generator/box-shadow/
+
+for icon
+https://boxicons.com/usage#animation
+
+For api
+https://jsonplaceholder.typicode.com/posts
+
+https://github.hubspot.com/odometer/docs/welcome/
+https://hype4.academy/tools/glassmorphism-generator
+
+Inspect for dropdown item
+right click on element => collapse children
+
+https://realtimecolors.com
+https://www.fontpair.co/all
+https://app.haikei.app/
+https://omatsuri.app/
+https://gradient.style/#type=linear&space=oklab&linear_named_angle=to+right&linear_angle=90&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2870%25+0.5+340%29%22%2C%22auto%22%3A%220%22%2C%22position1%22%3A%220%22%2C%22position2%22%3A%220%22%7D&stops=%7B%22kind%22%3A%22hint%22%2C%22auto%22%3A%2250%22%2C%22percentage%22%3A%2250%22%7D&stops=%7B%22kind%22%3A%22stop%22%2C%22color%22%3A%22oklch%2890%25+0.5+200%29%22%2C%22auto%22%3A%22100%22%2C%22position1%22%3A%22100%22%2C%22position2%22%3A%22100%22%7D
