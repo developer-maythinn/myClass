@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #223852e6;
 }
 
@@ -12,26 +11,16 @@ body {
 
 .main-section-bg {
   position: relative;
-  background-image: -webkit-gradient(linear, right top, left top, from(#243b55), to(#141e30));
   background-image: linear-gradient(to left, #243b55, #141e30);
   height: 100vh;
 }
 
 .main-section-bg main {
   max-width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -43,18 +32,11 @@ body {
   position: relative;
   width: 450px;
   height: 350px;
-  background: -webkit-gradient(linear, left top, right top, from(#4ac29a), to(#bdfff3));
   background: linear-gradient(to right, #4ac29a, #bdfff3);
   border-radius: 30% 70% 37% 63% / 33% 33% 67% 67%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -71,8 +53,7 @@ body {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1653314465 svg {
@@ -95,10 +76,8 @@ body {
   height: auto;
   border: 10px solid #52c6a0;
   border-radius: 20px;
-  -webkit-box-shadow: -10px 10px, -15px 10px 20px;
-          box-shadow: -10px 10px, -15px 10px 20px;
-  -webkit-transform: skewY(5deg);
-          transform: skewY(5deg);
+  box-shadow: -10px 10px, -15px 10px 20px;
+  transform: skewY(5deg);
 }
 
 .about p {
@@ -115,12 +94,10 @@ body {
 .card-container .icon-box {
   z-index: 1;
   padding: 30px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 15px;
   text-align: center;
-  -webkit-backdrop-filter: blur(0.5rem);
-          backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
   border-bottom: 3px solid #fff;
 }
 
@@ -170,8 +147,7 @@ body {
 .custom-carousel-item .img-wrapper img {
   width: 80px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   position: absolute;
   top: 33%;

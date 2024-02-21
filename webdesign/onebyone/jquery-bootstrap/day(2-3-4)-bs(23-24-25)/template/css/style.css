@@ -1,13 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: rgba(34, 56, 82, 0.9);
 }
 
 .main {
-  background: -webkit-gradient(linear, right top, left top, from(#243b55), to(#141e30));
   background: linear-gradient(to left, #243b55, #141e30);
   height: 100vh;
   position: relative;
@@ -22,7 +20,6 @@
   max-width: 450px;
   height: 350px;
   border-radius: 48% 52% 33% 67% / 42% 50% 50% 58%;
-  background: -webkit-gradient(linear, left top, right top, from(#4ac29a), to(#bdfff3));
   background: linear-gradient(to right, #4ac29a, #bdfff3);
   text-align: center;
 }
@@ -38,8 +35,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1654343213 svg {
@@ -62,10 +58,8 @@
   height: auto;
   border: 10px solid #4ac29a;
   border-radius: 20px;
-  -webkit-transform: skewY(7deg);
-          transform: skewY(7deg);
-  -webkit-box-shadow: -10px 10px, -15px 10px 20px;
-          box-shadow: -10px 10px, -15px 10px 20px;
+  transform: skewY(7deg);
+  box-shadow: -10px 10px, -15px 10px 20px;
 }
 
 .card-container {
@@ -78,10 +72,8 @@
 
 .card-container .custom-card {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-  -webkit-backdrop-filter: blur(0.8rem);
-          backdrop-filter: blur(0.8rem);
+  backdrop-filter: blur(0.8rem);
   padding: 30px;
   border-radius: 15px;
   text-align: center;
@@ -139,8 +131,7 @@
 .carousel .custom-carousel-item .img-wrapper img {
   width: 80px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   outline: 2px solid pink;
   position: absolute;
